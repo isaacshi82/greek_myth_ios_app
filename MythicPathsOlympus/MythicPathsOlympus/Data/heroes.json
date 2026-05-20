@@ -1,0 +1,20 @@
+[
+  {
+    "id": "perseus",
+    "name": "Perseus",
+    "subtitle": "Slayer of Medusa",
+    "description": "Son of Zeus, destined to face the Gorgon."
+  },
+  {
+    "id": "theseus",
+    "name": "Theseus",
+    "subtitle": "Hero of Athens",
+    "description": "The prince who entered the Labyrinth."
+  },
+  {
+    "id": "odysseus",
+    "name": "Odysseus",
+    "subtitle": "The Wanderer",
+    "description": "The cleverest hero of the Trojan War."
+  }
+]
