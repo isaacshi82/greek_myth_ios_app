@@ -24,7 +24,7 @@ struct MainMenuView: View {
                         .padding(.bottom, 32)
 
                     // Trivia mode — the first playable feature.
-                    NavigationLink(destination: TriviaView()) {
+                    NavigationLink(destination: TriviaSetupView()) {
                         TriviaMenuCard()
                     }
                     .padding(.horizontal)

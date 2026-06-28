@@ -1,7 +1,11 @@
 import SwiftUI
 
 struct TriviaView: View {
-    @StateObject private var model = TriviaViewModel()
+    @StateObject private var model: TriviaViewModel
+
+    init(category: String? = nil, difficulty: String? = nil) {
+        _model = StateObject(wrappedValue: TriviaViewModel(category: category, difficulty: difficulty))
+    }
 
     var body: some View {
         Group {

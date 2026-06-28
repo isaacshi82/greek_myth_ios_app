@@ -7,17 +7,27 @@ import Combine
 /// Keeping the game logic here (instead of inside the View) makes it easy to
 /// reason about and test, and keeps the View focused on how things look.
 final class TriviaViewModel: ObservableObject {
-    @Published private(set) var questions: [TriviaQuestion]
+    /// The full pool of questions matching the chosen filters; a round is drawn from this.
+    private let pool: [TriviaQuestion]
+    /// Maximum number of questions in a single round.
+    private let roundSize: Int
+
+    @Published private(set) var questions: [TriviaQuestion]   // the current round
     @Published private(set) var currentIndex = 0
     @Published private(set) var score = 0
     /// The answer index the player tapped for the current question, or nil if unanswered.
     @Published private(set) var selectedIndex: Int? = nil
     @Published private(set) var isFinished = false
 
-    init(questions: [TriviaQuestion]? = nil) {
-        // Load from the bundle by default; allow injection for previews/tests.
-        let loaded = questions ?? Bundle.main.decode([TriviaQuestion].self, from: "trivia_questions.json")
-        self.questions = loaded.shuffled()
+    /// Build a quiz, optionally filtered by category and/or difficulty.
+    /// Pass `pool` directly for previews/tests.
+    init(category: String? = nil, difficulty: String? = nil, roundSize: Int = 10, pool: [TriviaQuestion]? = nil) {
+        let source = pool ?? QuestionBank.filtered(category: category, difficulty: difficulty)
+        self.pool = source
+        self.roundSize = roundSize
+        self.questions = Array(source.shuffled().prefix(roundSize))
+        // Defensive: an empty pool can't be played, so treat it as already finished.
+        self.isFinished = self.questions.isEmpty
     }
 
     var currentQuestion: TriviaQuestion { questions[currentIndex] }
@@ -46,12 +56,12 @@ final class TriviaViewModel: ObservableObject {
         }
     }
 
-    /// Start over with a freshly shuffled deck.
+    /// Start over with a freshly drawn, shuffled round from the same pool.
     func restart() {
-        questions.shuffle()
+        questions = Array(pool.shuffled().prefix(roundSize))
         currentIndex = 0
         score = 0
         selectedIndex = nil
-        isFinished = false
+        isFinished = questions.isEmpty
     }
 }
