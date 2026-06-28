@@ -658,5 +658,125 @@
     "category": "Heroes",
     "difficulty": "hard",
     "source": "Apollodorus, Library; Ovid, Metamorphoses"
+  },
+  {
+    "id": "q67",
+    "question": "The Greek Sphinx had the body of a lion and the head of a what?",
+    "answers": ["A woman", "A bull", "An eagle", "A horse"],
+    "correctIndex": 0,
+    "explanation": "The Greek Sphinx had a woman's head, a lion's body, and an eagle's wings — and she terrorized the city of Thebes.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q68",
+    "question": "What was unusual about the appearance of the Cyclops Polyphemus?",
+    "answers": ["He had a single eye", "He had three heads", "He had snakes for hair", "He had bird wings"],
+    "correctIndex": 0,
+    "explanation": "Polyphemus, the Cyclops who trapped Odysseus, had one great eye in the middle of his forehead — which Odysseus blinded to escape.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q69",
+    "question": "The Sirens lured passing sailors to their deaths using what?",
+    "answers": ["Their beautiful song", "Bright lights", "A magic mist", "Giant waves"],
+    "correctIndex": 0,
+    "explanation": "The Sirens' irresistible singing drew sailors to wreck on the rocks of their island.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q70",
+    "question": "The Gorgon Medusa had what in place of hair?",
+    "answers": ["Living snakes", "Flames", "Feathers", "Vines"],
+    "correctIndex": 0,
+    "explanation": "Medusa's hair was a mass of living snakes, and a single look at her face turned a person to stone.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q71",
+    "question": "Centaurs were creatures that were half-human and half-what?",
+    "answers": ["Horse", "Bull", "Goat", "Lion"],
+    "correctIndex": 0,
+    "explanation": "A centaur had the upper body of a human joined to the body and legs of a horse.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q72",
+    "question": "Which monster posed a deadly riddle to travelers until the hero Oedipus solved it?",
+    "answers": ["The Sphinx", "The Hydra", "The Chimera", "Medusa"],
+    "correctIndex": 0,
+    "explanation": "When Oedipus answered the Sphinx's riddle, she threw herself to her death, freeing Thebes.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Apollodorus, Library"
+  },
+  {
+    "id": "q73",
+    "question": "Odysseus had to sail between the six-headed Scylla and which deadly whirlpool?",
+    "answers": ["Charybdis", "Echidna", "Ladon", "Cetus"],
+    "correctIndex": 0,
+    "explanation": "Charybdis was a monstrous whirlpool opposite Scylla; navigating 'between Scylla and Charybdis' meant choosing between two dangers.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q74",
+    "question": "Echidna, a creature that was half-woman and half-snake, was known as the 'mother of' what?",
+    "answers": ["Monsters", "The gods", "The winds", "The seas"],
+    "correctIndex": 0,
+    "explanation": "Echidna was called the 'Mother of Monsters'; with Typhon she bore Cerberus, the Hydra, the Chimera, and many others.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q75",
+    "question": "The fire-breathing Chimera was made of a lion, a serpent, and which third animal?",
+    "answers": ["A goat", "An eagle", "A bull", "A horse"],
+    "correctIndex": 0,
+    "explanation": "The Chimera was typically depicted as a lion in front, a goat rising from its back, and a serpent for a tail.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Homer, Iliad; Hesiod, Theogony"
+  },
+  {
+    "id": "q76",
+    "question": "How did Odysseus's crew avoid being lured by the Sirens' song?",
+    "answers": ["They plugged their ears with beeswax", "They sang louder", "They closed their eyes", "They dove underwater"],
+    "correctIndex": 0,
+    "explanation": "The crew sealed their ears with beeswax, while Odysseus — wanting to hear the song — had himself tied to the mast.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q77",
+    "question": "Which hundred-headed monster — the deadliest in Greek myth — did Zeus defeat and bury beneath a mountain?",
+    "answers": ["Typhon", "The Hydra", "Argus", "Geryon"],
+    "correctIndex": 0,
+    "explanation": "Typhon, a storm-monster born of Gaia, fought Zeus for the cosmos. Zeus blasted him with thunderbolts and trapped him under Mount Etna.",
+    "category": "Monsters",
+    "difficulty": "hard",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q78",
+    "question": "What was the name of the wise centaur who tutored heroes such as Achilles and Jason?",
+    "answers": ["Chiron", "Nessus", "Pholus", "Eurytion"],
+    "correctIndex": 0,
+    "explanation": "Unlike the wild, unruly centaurs, Chiron was wise and gentle — a renowned teacher of medicine, music, and warfare to many heroes.",
+    "category": "Monsters",
+    "difficulty": "hard",
+    "source": "Theoi.com"
   }
 ]
