@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q01",
+    "question": "Who is the king of the Greek gods and ruler of Mount Olympus?",
+    "answers": ["Hades", "Zeus", "Apollo", "Poseidon"],
+    "correctIndex": 1,
+    "explanation": "Zeus, god of the sky and thunder, led the gods in overthrowing the Titans and became king of Olympus.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q02",
+    "question": "Which goddess sprang fully grown and armored from the head of Zeus?",
+    "answers": ["Hera", "Aphrodite", "Athena", "Artemis"],
+    "correctIndex": 2,
+    "explanation": "Athena, goddess of wisdom and war, burst from Zeus's forehead after he swallowed her mother, Metis.",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q03",
+    "question": "Who was the Greek goddess of the hearth, home, and the sacred fire?",
+    "answers": ["Demeter", "Hestia", "Hebe", "Iris"],
+    "correctIndex": 1,
+    "explanation": "Hestia, the eldest child of Cronus and Rhea, tended the ever-burning fire of Olympus and was honored first in offerings.",
+    "category": "Olympians",
+    "difficulty": "hard",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q04",
+    "question": "Which hero beheaded the Gorgon Medusa?",
+    "answers": ["Theseus", "Heracles", "Perseus", "Jason"],
+    "correctIndex": 2,
+    "explanation": "Perseus used the reflection in his polished shield to avoid Medusa's petrifying gaze, then cut off her head.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q05",
+    "question": "Which hero escaped the Labyrinth by following a ball of thread?",
+    "answers": ["Theseus", "Odysseus", "Achilles", "Bellerophon"],
+    "correctIndex": 0,
+    "explanation": "Theseus slew the Minotaur and found his way out using thread given to him by Ariadne, the king's daughter.",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Encyclopaedia Britannica"
+  },
+  {
+    "id": "q06",
+    "question": "Who led the Argonauts on the quest for the Golden Fleece?",
+    "answers": ["Heracles", "Jason", "Perseus", "Cadmus"],
+    "correctIndex": 1,
+    "explanation": "Jason sailed on the ship Argo with a band of heroes to retrieve the Golden Fleece from distant Colchis.",
+    "category": "Heroes",
+    "difficulty": "hard",
+    "source": "Apollonius of Rhodes, Argonautica"
+  },
+  {
+    "id": "q07",
+    "question": "The Minotaur had the head of which animal?",
+    "answers": ["Lion", "Bull", "Goat", "Serpent"],
+    "correctIndex": 1,
+    "explanation": "The Minotaur had the head and tail of a bull on the body of a man, and was kept in the Labyrinth of Crete.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q08",
+    "question": "When Heracles cut off one of the Lernaean Hydra's heads, what usually happened?",
+    "answers": ["It died instantly", "Two heads grew back", "It turned to stone", "Nothing at all"],
+    "correctIndex": 1,
+    "explanation": "In most accounts the Hydra regrew two heads for each one severed. Heracles and his nephew Iolaus stopped it by burning each neck shut.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q09",
+    "question": "What kind of creature was Cerberus, the guardian of the Underworld?",
+    "answers": ["A giant serpent", "A multi-headed dog", "A winged horse", "A fire-breathing bull"],
+    "correctIndex": 1,
+    "explanation": "Cerberus was the many-headed hound (usually shown with three heads) that guarded the gates of Hades so the dead could not leave.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q10",
+    "question": "Who flew too close to the sun, melting his wax wings, and fell into the sea?",
+    "answers": ["Icarus", "Phaethon", "Hermes", "Bellerophon"],
+    "correctIndex": 0,
+    "explanation": "Icarus and his father Daedalus escaped Crete on wings of feathers and wax. Ignoring his father's warning, Icarus flew too high and the sun melted the wax.",
+    "category": "Myths & Stories",
+    "difficulty": "easy",
+    "source": "Ovid, Metamorphoses"
+  },
+  {
+    "id": "q11",
+    "question": "After Pandora opened the jar and released the world's evils, what alone remained inside?",
+    "answers": ["Love", "Hope", "Wisdom", "Fire"],
+    "correctIndex": 1,
+    "explanation": "The container was actually a large jar (pithos), not a box. After the evils escaped, only Hope (elpis) was left inside.",
+    "category": "Myths & Stories",
+    "difficulty": "medium",
+    "source": "Hesiod, Works and Days"
+  },
+  {
+    "id": "q12",
+    "question": "Which musician entered the Underworld to win back his wife, but lost her by looking back too soon?",
+    "answers": ["Orpheus", "Apollo", "Heracles", "Theseus"],
+    "correctIndex": 0,
+    "explanation": "Orpheus charmed Hades with his lyre to free his wife Eurydice, but lost her forever when he glanced back before they reached the surface.",
+    "category": "Myths & Stories",
+    "difficulty": "hard",
+    "source": "Virgil, Georgics; Ovid, Metamorphoses"
+  }
+]

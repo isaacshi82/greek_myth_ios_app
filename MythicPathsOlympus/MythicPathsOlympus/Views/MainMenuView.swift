@@ -20,6 +20,13 @@ struct MainMenuView: View {
                         .foregroundStyle(.secondary)
                         .padding(.bottom, 32)
 
+                    // Trivia mode — the first playable feature.
+                    NavigationLink(destination: TriviaView()) {
+                        TriviaMenuCard()
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom, 24)
+
                     Text("Choose your hero")
                         .font(.headline)
                         .padding(.bottom, 16)
@@ -74,6 +81,39 @@ struct HeroCard: View {
             .padding()
         }
         .clipShape(RoundedRectangle(cornerRadius: 16))
+    }
+}
+
+struct TriviaMenuCard: View {
+    var body: some View {
+        HStack(spacing: 16) {
+            Image(systemName: "questionmark.circle.fill")
+                .font(.system(size: 40))
+                .foregroundStyle(.white)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Trivia Challenge")
+                    .font(.title2)
+                    .bold()
+                    .foregroundStyle(.white)
+                Text("Test your knowledge of the myths")
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.85))
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundStyle(.white.opacity(0.7))
+                .font(.title3)
+        }
+        .padding()
+        .background(
+            LinearGradient(
+                colors: [.indigo, .purple],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            ),
+            in: RoundedRectangle(cornerRadius: 16)
+        )
     }
 }
 
