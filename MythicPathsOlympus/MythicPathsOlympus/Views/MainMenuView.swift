@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct MainMenuView: View {
+    /// Story mode is built but parked for now. Flip to `true` to show the hero cards again.
+    let showStoryMode = false
+
     let heroes: [Hero] = [
         Hero(id: "perseus", name: "Perseus", subtitle: "Slayer of Medusa", description: "Son of Zeus, destined to face the Gorgon."),
         Hero(id: "theseus", name: "Theseus", subtitle: "Hero of Athens", description: "The prince who entered the Labyrinth."),
@@ -27,16 +30,18 @@ struct MainMenuView: View {
                     .padding(.horizontal)
                     .padding(.bottom, 24)
 
-                    Text("Choose your hero")
-                        .font(.headline)
-                        .padding(.bottom, 16)
+                    if showStoryMode {
+                        Text("Choose your hero")
+                            .font(.headline)
+                            .padding(.bottom, 16)
 
-                    ForEach(heroes) { hero in
-                        NavigationLink(destination: Text("Story for \(hero.name) — coming soon")) {
-                            HeroCard(hero: hero)
+                        ForEach(heroes) { hero in
+                            NavigationLink(destination: Text("Story for \(hero.name) — coming soon")) {
+                                HeroCard(hero: hero)
+                            }
+                            .padding(.horizontal)
+                            .padding(.bottom, 12)
                         }
-                        .padding(.horizontal)
-                        .padding(.bottom, 12)
                     }
                 }
             }
