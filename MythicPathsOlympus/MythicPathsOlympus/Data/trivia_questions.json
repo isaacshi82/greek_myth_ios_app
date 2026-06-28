@@ -538,5 +538,125 @@
     "category": "Olympians",
     "difficulty": "hard",
     "source": "Theoi.com"
+  },
+  {
+    "id": "q55",
+    "question": "Which hero was famous for his superhuman strength and his Twelve Labors?",
+    "answers": ["Heracles", "Theseus", "Jason", "Bellerophon"],
+    "correctIndex": 0,
+    "explanation": "Heracles (Hercules to the Romans), a son of Zeus, performed the Twelve Labors as penance and became the greatest of the Greek heroes.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Apollodorus, Library"
+  },
+  {
+    "id": "q56",
+    "question": "Which Greek hero was known for his cleverness and the trick of the Trojan Horse?",
+    "answers": ["Achilles", "Odysseus", "Ajax", "Menelaus"],
+    "correctIndex": 1,
+    "explanation": "Odysseus devised the hollow wooden horse that let the Greeks sneak into Troy, then endured a ten-year journey home in the Odyssey.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Homer, Odyssey; Virgil, Aeneid"
+  },
+  {
+    "id": "q57",
+    "question": "Achilles was the greatest Greek warrior in which war?",
+    "answers": ["The Trojan War", "The Titanomachy", "The Persian War", "The Argonaut voyage"],
+    "correctIndex": 0,
+    "explanation": "Achilles was the central Greek champion of the Trojan War, told in Homer's Iliad.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Homer, Iliad"
+  },
+  {
+    "id": "q58",
+    "question": "Which winged horse did the hero Bellerophon tame and ride?",
+    "answers": ["Pegasus", "The Chimera", "Cerberus", "The Sphinx"],
+    "correctIndex": 0,
+    "explanation": "With the help of Athena's golden bridle, Bellerophon tamed the winged horse Pegasus.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q59",
+    "question": "How many Labors did Heracles famously have to complete?",
+    "answers": ["Seven", "Ten", "Twelve", "Twenty"],
+    "correctIndex": 2,
+    "explanation": "Heracles performed Twelve Labors for King Eurystheus, including slaying the Nemean Lion and the Hydra.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Apollodorus, Library"
+  },
+  {
+    "id": "q60",
+    "question": "According to later legend, Achilles could be wounded only in what part of his body?",
+    "answers": ["His heel", "His eye", "His hand", "His chest"],
+    "correctIndex": 0,
+    "explanation": "Thetis dipped baby Achilles in the River Styx, holding him by the heel — leaving that spot vulnerable. (This invulnerability story is post-Homeric; Homer's Iliad never mentions it.)",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Statius, Achilleid"
+  },
+  {
+    "id": "q61",
+    "question": "The first of Heracles' Labors was to slay which beast, whose hide no weapon could pierce?",
+    "answers": ["The Nemean Lion", "The Minotaur", "The Chimera", "The Sphinx"],
+    "correctIndex": 0,
+    "explanation": "Heracles strangled the Nemean Lion with his bare hands and afterward wore its impenetrable hide as armor.",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Apollodorus, Library"
+  },
+  {
+    "id": "q62",
+    "question": "Which fire-breathing monster did Bellerophon slay from the back of Pegasus?",
+    "answers": ["The Chimera", "Medusa", "The Hydra", "The Sphinx"],
+    "correctIndex": 0,
+    "explanation": "From the air on Pegasus, Bellerophon killed the Chimera — a beast that was part lion, part goat, and part serpent.",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Homer, Iliad; Hesiod, Theogony"
+  },
+  {
+    "id": "q63",
+    "question": "The winged horse Pegasus sprang forth when which monster was beheaded?",
+    "answers": ["Medusa", "The Hydra", "Echidna", "The Chimera"],
+    "correctIndex": 0,
+    "explanation": "When Perseus cut off Medusa's head, the winged horse Pegasus and the giant Chrysaor sprang from her body.",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q64",
+    "question": "During the Trojan War, Achilles killed which Trojan prince and greatest defender of Troy?",
+    "answers": ["Hector", "Paris", "Aeneas", "Priam"],
+    "correctIndex": 0,
+    "explanation": "Achilles slew Hector to avenge his friend Patroclus. (It was Hector's brother Paris who later killed Achilles.)",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Homer, Iliad"
+  },
+  {
+    "id": "q65",
+    "question": "Theseus's father drowned himself on seeing black sails, wrongly thinking his son dead. What was named after him?",
+    "answers": ["The Aegean Sea", "The Ionian Sea", "Mount Olympus", "The city of Athens"],
+    "correctIndex": 0,
+    "explanation": "Theseus forgot to swap his ship's black sails for white. Seeing the black sails, King Aegeus despaired and threw himself into the sea — thereafter called the Aegean.",
+    "category": "Heroes",
+    "difficulty": "hard",
+    "source": "Plutarch, Life of Theseus"
+  },
+  {
+    "id": "q66",
+    "question": "Which hero founded the city of Thebes and sowed dragon's teeth that grew into armed warriors?",
+    "answers": ["Cadmus", "Perseus", "Bellerophon", "Pelops"],
+    "correctIndex": 0,
+    "explanation": "Cadmus slew a dragon and sowed its teeth, from which armed men (the Spartoi, or 'sown men') sprang up.",
+    "category": "Heroes",
+    "difficulty": "hard",
+    "source": "Apollodorus, Library; Ovid, Metamorphoses"
   }
 ]
