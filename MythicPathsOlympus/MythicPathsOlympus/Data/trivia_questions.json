@@ -418,5 +418,125 @@
     "category": "Titans & Creation",
     "difficulty": "hard",
     "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q43",
+    "question": "Who was the Greek god of the sea, who carried a three-pronged trident?",
+    "answers": ["Poseidon", "Hades", "Ares", "Hermes"],
+    "correctIndex": 0,
+    "explanation": "Poseidon, brother of Zeus, ruled the sea and could stir up storms and earthquakes with his trident.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q44",
+    "question": "Who was the Greek goddess of love and beauty?",
+    "answers": ["Hera", "Artemis", "Aphrodite", "Demeter"],
+    "correctIndex": 2,
+    "explanation": "Aphrodite was the goddess of love, beauty, and desire.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q45",
+    "question": "Who was the queen of the gods and wife of Zeus?",
+    "answers": ["Hera", "Hestia", "Demeter", "Athena"],
+    "correctIndex": 0,
+    "explanation": "Hera was queen of Olympus and goddess of marriage, often portrayed as jealous of Zeus's many affairs.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q46",
+    "question": "Who was the messenger of the gods, famous for his winged sandals?",
+    "answers": ["Apollo", "Hermes", "Ares", "Hephaestus"],
+    "correctIndex": 1,
+    "explanation": "Hermes, the swift messenger god, was also the patron of travelers, merchants, and thieves.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q47",
+    "question": "Who was the Greek god of war?",
+    "answers": ["Apollo", "Hephaestus", "Ares", "Hermes"],
+    "correctIndex": 2,
+    "explanation": "Ares represented the brutal, chaotic side of war and was disliked by most of the other gods.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q48",
+    "question": "Apollo and which goddess were twin children of Zeus and Leto?",
+    "answers": ["Athena", "Artemis", "Hera", "Persephone"],
+    "correctIndex": 1,
+    "explanation": "Apollo (god of light, music, and prophecy) and Artemis (goddess of the hunt and the moon) were twins born to Leto.",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q49",
+    "question": "In the most famous tradition, Aphrodite was born from what?",
+    "answers": ["Sea foam", "Zeus's head", "A pomegranate", "Clay"],
+    "correctIndex": 0,
+    "explanation": "Hesiod says Aphrodite rose from the sea foam where the severed parts of Uranus fell. (A different tradition makes her the daughter of Zeus and Dione.)",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q50",
+    "question": "Hephaestus, god of fire and the forge, is described in myth as having what trait?",
+    "answers": ["He was lame", "He was blind", "He was a giant", "He had wings"],
+    "correctIndex": 0,
+    "explanation": "Hephaestus was lame (often said to have been thrown from Olympus). The divine smith, he forged the gods' weapons and was married to Aphrodite.",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Homer, Iliad"
+  },
+  {
+    "id": "q51",
+    "question": "Apollo's most famous oracle, where a priestess delivered prophecies, was located at?",
+    "answers": ["Delphi", "Olympia", "Athens", "Sparta"],
+    "correctIndex": 0,
+    "explanation": "At Delphi, the priestess known as the Pythia spoke Apollo's prophecies — the most important oracle in the Greek world.",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Encyclopaedia Britannica"
+  },
+  {
+    "id": "q52",
+    "question": "Who was the god of wine, theater, and revelry, often counted among the Twelve Olympians?",
+    "answers": ["Dionysus", "Pan", "Helios", "Eros"],
+    "correctIndex": 0,
+    "explanation": "Dionysus, god of wine and the theater, was a latecomer to Olympus and is frequently listed among the Twelve.",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q53",
+    "question": "Hera placed the hundred eyes of the slain giant Argus onto the tail of which bird?",
+    "answers": ["The peacock", "The owl", "The crow", "The eagle"],
+    "correctIndex": 0,
+    "explanation": "After Argus was killed, Hera set his hundred eyes into the tail of the peacock, her sacred bird.",
+    "category": "Olympians",
+    "difficulty": "hard",
+    "source": "Ovid, Metamorphoses"
+  },
+  {
+    "id": "q54",
+    "question": "Hermes carried a herald's staff entwined with two snakes and topped with wings. What is it called?",
+    "answers": ["The caduceus", "The aegis", "The thyrsus", "The trident"],
+    "correctIndex": 0,
+    "explanation": "The caduceus was Hermes's staff. (It is often confused with the Rod of Asclepius — a single snake, no wings — the true symbol of medicine.)",
+    "category": "Olympians",
+    "difficulty": "hard",
+    "source": "Theoi.com"
   }
 ]
