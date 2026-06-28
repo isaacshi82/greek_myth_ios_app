@@ -268,5 +268,155 @@
     "category": "The Underworld",
     "difficulty": "hard",
     "source": "Theoi.com"
+  },
+  {
+    "id": "q28",
+    "question": "Who was the leader of the Titans, who ruled the cosmos before the Olympian gods?",
+    "answers": ["Atlas", "Cronus", "Oceanus", "Hyperion"],
+    "correctIndex": 1,
+    "explanation": "Cronus, youngest of the Titans, overthrew his father Uranus and ruled during the so-called Golden Age, until his own son Zeus overthrew him.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q29",
+    "question": "The Titan Atlas was condemned to hold up what on his shoulders?",
+    "answers": ["The sky", "The earth", "The ocean", "Mount Olympus"],
+    "correctIndex": 0,
+    "explanation": "A common misconception is that Atlas held up the earth — his punishment was actually to hold up the sky (the heavens) at the western edge of the world.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q30",
+    "question": "Which Titan stole fire from the gods and gave it to humankind?",
+    "answers": ["Prometheus", "Atlas", "Cronus", "Hyperion"],
+    "correctIndex": 0,
+    "explanation": "Prometheus championed humanity by stealing fire for them, and was severely punished by Zeus for it.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q31",
+    "question": "Cronus was overthrown by his youngest son, who then became king of the gods. Who was that son?",
+    "answers": ["Poseidon", "Hades", "Zeus", "Apollo"],
+    "correctIndex": 2,
+    "explanation": "Zeus, raised in secret on Crete, freed his swallowed siblings and led them in overthrowing Cronus and the Titans.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q32",
+    "question": "Gaia, one of the first beings to come into existence, was the personification of what?",
+    "answers": ["The Earth", "The Sea", "Time", "Fire"],
+    "correctIndex": 0,
+    "explanation": "Gaia was the primordial Earth, mother of the sky (Uranus), the sea, the mountains, and the Titans.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q33",
+    "question": "Uranus, the husband and son of Gaia, was the primordial god of what?",
+    "answers": ["The Sky", "The Sea", "The Underworld", "The Harvest"],
+    "correctIndex": 0,
+    "explanation": "Uranus personified the sky (the heavens). With Gaia he fathered the twelve Titans.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q34",
+    "question": "What is the name of the ten-year war in which Zeus and the Olympians defeated the Titans?",
+    "answers": ["The Titanomachy", "The Gigantomachy", "The Trojan War", "The Theogony"],
+    "correctIndex": 0,
+    "explanation": "The Titanomachy was the war against the Titans. (The Gigantomachy was a separate, later war against the Giants.)",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q35",
+    "question": "As punishment, an eagle ate Prometheus's ever-regrowing liver each day. What was his crime?",
+    "answers": ["Giving fire to humans", "Killing a god", "Betraying Cronus", "Creating monsters"],
+    "correctIndex": 0,
+    "explanation": "For stealing fire for humanity, Zeus chained Prometheus to a rock where an eagle ate his liver daily; it regrew each night until Heracles freed him.",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony; Aeschylus, Prometheus Bound"
+  },
+  {
+    "id": "q36",
+    "question": "To save the infant Zeus, Rhea tricked Cronus into swallowing what instead of the baby?",
+    "answers": ["A stone wrapped in cloth", "A goat", "A clay statue", "A golden apple"],
+    "correctIndex": 0,
+    "explanation": "Rhea handed Cronus a stone wrapped in swaddling clothes, which he swallowed believing it was Zeus.",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q37",
+    "question": "Why did Cronus swallow each of his own children at birth?",
+    "answers": ["A prophecy said a child would overthrow him", "To absorb their power", "Out of jealousy of Rhea", "To feed the other Titans"],
+    "correctIndex": 0,
+    "explanation": "Gaia and Uranus foretold that one of his children would overthrow him, just as he had overthrown his own father — so Cronus swallowed them.",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q38",
+    "question": "Who forged and gave Zeus his thunderbolts for the war against the Titans?",
+    "answers": ["The Cyclopes", "The Muses", "The Fates", "The Gorgons"],
+    "correctIndex": 0,
+    "explanation": "Zeus freed the Cyclopes from Tartarus, and in gratitude they forged his thunderbolts — the weapon that helped win the Titanomachy.",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q39",
+    "question": "Cronus overthrew his father Uranus using what weapon, provided by Gaia?",
+    "answers": ["A sickle", "A thunderbolt", "A trident", "A spear"],
+    "correctIndex": 0,
+    "explanation": "Gaia made a great adamantine sickle, and Cronus used it to overthrow Uranus.",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q40",
+    "question": "Which Titaness was the goddess of memory and mother of the nine Muses?",
+    "answers": ["Mnemosyne", "Themis", "Phoebe", "Tethys"],
+    "correctIndex": 0,
+    "explanation": "Mnemosyne ('memory') lay with Zeus for nine nights and bore the nine Muses, goddesses of the arts.",
+    "category": "Titans & Creation",
+    "difficulty": "hard",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q41",
+    "question": "In Hesiod's account, how many Titans were the original children of Uranus and Gaia?",
+    "answers": ["Six", "Nine", "Twelve", "Three"],
+    "correctIndex": 2,
+    "explanation": "There were twelve Titans — six brothers (including Cronus and Oceanus) and six sisters (including Rhea and Mnemosyne).",
+    "category": "Titans & Creation",
+    "difficulty": "hard",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q42",
+    "question": "Besides the Titans and the one-eyed Cyclopes, Gaia and Uranus bore which hundred-handed giants?",
+    "answers": ["The Hecatoncheires", "The Gigantes", "The Gorgons", "The Erinyes"],
+    "correctIndex": 0,
+    "explanation": "The Hecatoncheires ('Hundred-Handed Ones') — Cottus, Briareus, and Gyges — each had fifty heads and a hundred arms, and helped Zeus defeat the Titans.",
+    "category": "Titans & Creation",
+    "difficulty": "hard",
+    "source": "Hesiod, Theogony"
   }
 ]
