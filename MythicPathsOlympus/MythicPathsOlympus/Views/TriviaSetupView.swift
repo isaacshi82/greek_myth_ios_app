@@ -1,11 +1,5 @@
 import SwiftUI
 
-/// Filter the quiz by category and difficulty before starting.
-struct TriviaConfig: Hashable {
-    let category: String?
-    let difficulty: String?
-}
-
 struct TriviaSetupView: View {
     @State private var category: String? = nil
     @State private var difficulty: String? = nil
@@ -38,7 +32,9 @@ struct TriviaSetupView: View {
             }
 
             Section {
-                NavigationLink(value: TriviaConfig(category: category, difficulty: difficulty)) {
+                NavigationLink {
+                    TriviaView(category: category, difficulty: difficulty)
+                } label: {
                     HStack {
                         Text("Start Quiz").font(.headline)
                         Spacer()
@@ -57,9 +53,6 @@ struct TriviaSetupView: View {
         }
         .navigationTitle("Trivia Challenge")
         .navigationBarTitleDisplayMode(.inline)
-        .navigationDestination(for: TriviaConfig.self) { config in
-            TriviaView(category: config.category, difficulty: config.difficulty)
-        }
     }
 }
 
