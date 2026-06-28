@@ -118,5 +118,155 @@
     "category": "Myths & Stories",
     "difficulty": "hard",
     "source": "Virgil, Georgics; Ovid, Metamorphoses"
+  },
+  {
+    "id": "q13",
+    "question": "Who is the Greek god and ruler of the Underworld?",
+    "answers": ["Zeus", "Hades", "Apollo", "Ares"],
+    "correctIndex": 1,
+    "explanation": "Hades, brother of Zeus and Poseidon, received the Underworld as his domain when the three brothers divided the cosmos.",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q14",
+    "question": "Who is the queen of the Underworld and wife of Hades?",
+    "answers": ["Demeter", "Hera", "Persephone", "Aphrodite"],
+    "correctIndex": 2,
+    "explanation": "Persephone, daughter of Demeter, was carried off by Hades and became queen of the Underworld.",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Homeric Hymn to Demeter"
+  },
+  {
+    "id": "q15",
+    "question": "What food did Persephone eat that bound her to the Underworld?",
+    "answers": ["Pomegranate seeds", "A golden apple", "Honey", "Figs"],
+    "correctIndex": 0,
+    "explanation": "Eating the food of the dead bound her to Hades. She ate pomegranate seeds — ancient sources differ on how many (four in the Homeric Hymn, six in Ovid).",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Homeric Hymn to Demeter; Ovid, Metamorphoses"
+  },
+  {
+    "id": "q16",
+    "question": "Cerberus guarded the gates of the Underworld mainly to stop whom from leaving?",
+    "answers": ["The dead", "The gods", "Living heroes", "The Titans"],
+    "correctIndex": 0,
+    "explanation": "The many-headed hound let souls enter but prevented the dead from escaping back to the world of the living.",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q17",
+    "question": "Persephone's yearly months in the Underworld were said to explain the origin of what?",
+    "answers": ["The seasons", "The tides", "Eclipses", "Thunder"],
+    "correctIndex": 0,
+    "explanation": "While Persephone is below, her grieving mother Demeter lets the earth go barren — explaining autumn and winter; her return brings spring.",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Homeric Hymn to Demeter"
+  },
+  {
+    "id": "q18",
+    "question": "What did the ancient Greeks place with the dead to pay Charon the ferryman?",
+    "answers": ["A coin", "A sword", "A loaf of bread", "A laurel wreath"],
+    "correctIndex": 0,
+    "explanation": "A coin (an obol) was placed in or on the mouth of the dead as Charon's fare to ferry them across the river.",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q19",
+    "question": "Who ferried the souls of the dead across the rivers of the Underworld?",
+    "answers": ["Hermes", "Charon", "Thanatos", "Cerberus"],
+    "correctIndex": 1,
+    "explanation": "Charon ferried souls who had received proper burial across the river. (Greek sources name the river Acheron; later Roman writers say the Styx.)",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q20",
+    "question": "Drinking from which river of the Underworld caused souls to forget their former lives?",
+    "answers": ["Styx", "Lethe", "Phlegethon", "Cocytus"],
+    "correctIndex": 1,
+    "explanation": "Lethe was the river of forgetfulness; its waters erased the memories of the dead. ('Lethe' gives us the word 'lethargy'.)",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q21",
+    "question": "In the Underworld, where did the souls of heroes and the virtuous go?",
+    "answers": ["Tartarus", "Elysium", "The Asphodel Meadows", "Mount Olympus"],
+    "correctIndex": 1,
+    "explanation": "Elysium (the Elysian Fields) was the blessed paradise reserved for heroes and the righteous; ordinary souls went to the Asphodel Meadows.",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q22",
+    "question": "Which king was condemned to roll a boulder uphill forever, only for it to roll back down each time?",
+    "answers": ["Tantalus", "Sisyphus", "Ixion", "Midas"],
+    "correctIndex": 1,
+    "explanation": "Sisyphus cheated death and was punished in the Underworld by endlessly rolling a boulder that always rolled back down.",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q23",
+    "question": "Whose punishment — standing in water that recedes and beneath fruit that pulls away — gave us the word 'tantalize'?",
+    "answers": ["Tantalus", "Sisyphus", "Atlas", "Prometheus"],
+    "correctIndex": 0,
+    "explanation": "Tantalus stood in a pool beneath fruit trees, but the water drained when he stooped to drink and the branches rose when he reached — eternally 'tantalized'.",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q24",
+    "question": "Hermes had a special role escorting the souls of the dead toward the Underworld. What was this role called?",
+    "answers": ["Psychopomp", "Oracle", "Ferryman", "Judge"],
+    "correctIndex": 0,
+    "explanation": "As 'Psychopomp' (guide of souls), Hermes led the newly dead down to the river, where Charon waited to ferry them across.",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q25",
+    "question": "Three judges decided the fate of the dead in the Underworld. Which of these was one of them?",
+    "answers": ["Minos", "Theseus", "Cadmus", "Nestor"],
+    "correctIndex": 0,
+    "explanation": "Minos, along with Rhadamanthus and Aeacus, judged the souls of the dead and assigned them their place in the afterlife.",
+    "category": "The Underworld",
+    "difficulty": "hard",
+    "source": "Plato, Gorgias"
+  },
+  {
+    "id": "q26",
+    "question": "What was the name of the deep abyss below the Underworld where the worst sinners and the defeated Titans were imprisoned?",
+    "answers": ["Erebus", "Tartarus", "Elysium", "Acheron"],
+    "correctIndex": 1,
+    "explanation": "Tartarus was the deepest pit, far below Hades, used as a dungeon for the Titans and a place of torment for the greatest wrongdoers.",
+    "category": "The Underworld",
+    "difficulty": "hard",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q27",
+    "question": "Hades owned a famous helmet that granted its wearer what power?",
+    "answers": ["Invisibility", "Flight", "Super strength", "Control of fire"],
+    "correctIndex": 0,
+    "explanation": "The Helm of Hades (the Cap of Darkness), forged by the Cyclopes, made its wearer invisible. Perseus borrowed it to escape Medusa's sisters.",
+    "category": "The Underworld",
+    "difficulty": "hard",
+    "source": "Theoi.com"
   }
 ]
