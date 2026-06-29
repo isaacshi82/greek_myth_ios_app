@@ -9,16 +9,20 @@ struct GuideSpeaker: View {
     let base: String
 
     var body: some View {
-        TimelineView(.periodic(from: .now, by: 0.15)) { context in
-            let tick = Int(context.date.timeIntervalSinceReferenceDate / 0.15)
-            content(for: frameSuffix(tick: tick))
+        TimelineView(.periodic(from: .now, by: 0.1)) { context in
+            content(for: frameSuffix(at: context.date.timeIntervalSinceReferenceDate))
         }
     }
 
-    /// Alternate idle/talk each tick (~5 swaps/sec) with a quick blink now and then.
-    private func frameSuffix(tick: Int) -> String {
-        if tick % 20 == 0 { return "blink" }
-        return tick.isMultiple(of: 2) ? "talk" : "idle"
+    /// A short talk burst (~1s of mouth flaps) at the start of each 5s window,
+    /// idle the rest of the time, with a quick blink every 10s.
+    private func frameSuffix(at t: TimeInterval) -> String {
+        if t.truncatingRemainder(dividingBy: 10) < 0.2 { return "blink" }
+        let inWindow = t.truncatingRemainder(dividingBy: 5)
+        if inWindow < 1.0 {
+            return Int(inWindow / 0.2).isMultiple(of: 2) ? "talk" : "idle"
+        }
+        return "idle"
     }
 
     @ViewBuilder
@@ -26,8 +30,15 @@ struct GuideSpeaker: View {
         if let image = UIImage(named: "\(base)-\(suffix)") ?? UIImage(named: "\(base)-idle") {
             // Color.clear sets the bounds; the image fills as a clipped overlay so
             // its scaledToFill size never widens the layout past the screen.
+            // Scaling slightly from the top crops off the bottom edge, where the
+            // frames differ — which would otherwise flicker when they swap.
             Color.clear
-                .overlay { Image(uiImage: image).resizable().scaledToFill() }
+                .overlay {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFill()
+                        .scaleEffect(1.15, anchor: .top)
+                }
                 .clipped()
         } else {
             GuidePlaceholder(base: base)

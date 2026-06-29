@@ -19,14 +19,14 @@ struct ChapterView: View {
             // Image + narration crossfade together as the panel changes.
             Group {
                 if let guide = panel.guide {
-                    // Guide takes the (near) full screen, dialogue floats over the bottom.
-                    GuideSpeaker(base: guide)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .clipped()
-                        .overlay(alignment: .bottom) {
-                            NarrationCard(speaker: panel.speaker, text: panel.text, glass: true)
-                                .padding()
-                        }
+                    // Guide sits large up top; dialogue in a card below (mouth stays visible).
+                    VStack(spacing: 0) {
+                        GuideSpeaker(base: guide)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .clipped()
+
+                        NarrationCard(speaker: panel.speaker, text: panel.text)
+                    }
                 } else {
                     VStack(spacing: 0) {
                         PanelImageView(imageName: panel.image)
