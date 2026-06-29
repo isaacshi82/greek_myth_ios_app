@@ -16,9 +16,17 @@
 ---
 
 ## STEP 1 — Generate the MASTER (get one you love first)
-> *[STYLE BLOCK]* **Front-facing bust portrait, head and shoulders, looking directly at the viewer**, centered, symmetrical. A cheeky young Greek god, about 12–14, caricatured with big expressive eyes and a warm mischievous gap-tooth grin. He wears an **oversized winged traveler's cap** (small white wings on the sides), tousled dark hair beneath it, a short tunic with a small cloak, gold accents and a bright orange-and-teal color scheme. Friendly and inviting, full of energy. **Flat solid teal background** (for easy cutout). Square 1:1.
+**Generate in a FRESH chat thread** (an old thread anchors Gemini to the previous full-body running pose). Lead with the framing and use explicit negatives, or it defaults to an action pose:
 
-→ Pick your favorite. **This is the canon.** All frames are *edits* of this one image.
+> *[STYLE BLOCK]* **A HEAD-AND-SHOULDERS BUST PORTRAIT, viewed from the FRONT, facing the viewer directly, centered and symmetrical — like a character talking to the camera. NOT full-body, NOT a side or profile view, NOT a running or action pose.** A cheeky young Greek god, about 12–14, caricatured, with **big expressive eyes (open, looking right at the viewer)** and a warm mischievous gap-tooth grin. He wears an oversized winged traveler's cap (small white side-wings), tousled dark hair, a short tunic with a small cloak, gold accents, bright orange-and-teal colors. **Flat solid teal background.** Square 1:1.
+
+→ Pick your favorite **front-facing, eyes-open** result. **This is the canon (`hermes-idle`).** All other frames are *edits* of this one image.
+
+### If it keeps giving the wrong pose
+- Start a brand-new thread (no earlier Hermes images in context).
+- Keep the framing sentence FIRST, with the NOT-full-body / NOT-side-view negatives.
+- "Bust portrait" + "facing the viewer" + "talking to the camera" are the key phrases.
+- Eyes must be **open** for the master (closed eyes belong to the `hermes-blink` frame).
 
 ## STEP 2 — Derive the FRAMES by EDITING the master (do NOT re-generate)
 For each, use Gemini's **edit/"change this image"** feature on the master so everything stays pixel-stable and only the delta changes:
