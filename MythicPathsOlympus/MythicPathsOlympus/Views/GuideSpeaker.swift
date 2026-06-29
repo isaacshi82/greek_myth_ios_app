@@ -15,9 +15,9 @@ struct GuideSpeaker: View {
     }
 
     /// A short talk burst (~1s of mouth flaps) at the start of each 5s window,
-    /// idle the rest of the time, with a quick blink every 10s.
+    /// idle the rest of the time, with a quick blink every 8.5s (off-cycle from talk).
     private func frameSuffix(at t: TimeInterval) -> String {
-        if t.truncatingRemainder(dividingBy: 10) < 0.2 { return "blink" }
+        if t.truncatingRemainder(dividingBy: 8.5) < 0.2 { return "blink" }
         let inWindow = t.truncatingRemainder(dividingBy: 5)
         if inWindow < 1.0 {
             return Int(inWindow / 0.2).isMultiple(of: 2) ? "talk" : "idle"
