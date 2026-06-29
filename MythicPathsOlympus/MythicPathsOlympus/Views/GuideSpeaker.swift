@@ -24,9 +24,11 @@ struct GuideSpeaker: View {
     @ViewBuilder
     private func content(for suffix: String) -> some View {
         if let image = UIImage(named: "\(base)-\(suffix)") ?? UIImage(named: "\(base)-idle") {
-            Image(uiImage: image)
-                .resizable()
-                .scaledToFill()
+            // Color.clear sets the bounds; the image fills as a clipped overlay so
+            // its scaledToFill size never widens the layout past the screen.
+            Color.clear
+                .overlay { Image(uiImage: image).resizable().scaledToFill() }
+                .clipped()
         } else {
             GuidePlaceholder(base: base)
         }

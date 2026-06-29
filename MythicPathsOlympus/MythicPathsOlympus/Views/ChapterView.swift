@@ -20,13 +20,13 @@ struct ChapterView: View {
             Group {
                 if let guide = panel.guide {
                     // Guide takes the (near) full screen, dialogue floats over the bottom.
-                    ZStack(alignment: .bottom) {
-                        GuideSpeaker(base: guide)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .clipped()
-                        NarrationCard(speaker: panel.speaker, text: panel.text, glass: true)
-                            .padding()
-                    }
+                    GuideSpeaker(base: guide)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .clipped()
+                        .overlay(alignment: .bottom) {
+                            NarrationCard(speaker: panel.speaker, text: panel.text, glass: true)
+                                .padding()
+                        }
                 } else {
                     VStack(spacing: 0) {
                         PanelImageView(imageName: panel.image)
@@ -88,21 +88,30 @@ private struct PanelImageView: View {
     @State private var animate = false
 
     var body: some View {
-        Group {
-            if let uiImage = UIImage(named: imageName) {
-                Image(uiImage: uiImage)
-                    .resizable()
-                    .scaledToFill()
-            } else {
-                PlaceholderArt(label: imageName)
+        // Color.clear sets the bounds; the image fills as a clipped overlay so its
+        // scaledToFill size never widens the layout past the screen.
+        Color.clear
+            .overlay {
+                imageOrPlaceholder
+                    // Always start zoomed past 1.0 so the pan never reveals an edge.
+                    .scaleEffect(animate ? 1.18 : 1.08)
+                    .offset(x: animate ? -12 : 12, y: animate ? -8 : 8)
             }
-        }
-        // Always start zoomed slightly past 1.0 so the pan never reveals an edge.
-        .scaleEffect(animate ? 1.18 : 1.08)
-        .offset(x: animate ? -12 : 12, y: animate ? -8 : 8)
-        .onAppear {
-            animate = false
-            withAnimation(.easeInOut(duration: 10)) { animate = true }
+            .clipped()
+            .onAppear {
+                animate = false
+                withAnimation(.easeInOut(duration: 10)) { animate = true }
+            }
+    }
+
+    @ViewBuilder
+    private var imageOrPlaceholder: some View {
+        if let uiImage = UIImage(named: imageName) {
+            Image(uiImage: uiImage)
+                .resizable()
+                .scaledToFill()
+        } else {
+            PlaceholderArt(label: imageName)
         }
     }
 }
