@@ -1,0 +1,100 @@
+[
+  {
+    "id": "ch1",
+    "title": "The Birth of the Gods",
+    "unit": "The Beginning",
+    "quizCategory": "Titans & Creation",
+    "panels": [
+      {
+        "id": "ch1-01",
+        "speaker": "Hermes",
+        "text": "Hey — Hermes here, messenger of the gods, fastest feet on Olympus. Before there were gods throwing lightning and heroes slaying monsters, there was… nothing. Want to know how it all started? Keep up.",
+        "image": "chapter1-01"
+      },
+      {
+        "id": "ch1-02",
+        "speaker": null,
+        "text": "First, there was Chaos — a great, yawning emptiness. Not a monster, not a place. Just… the beginning of everything.",
+        "image": "chapter1-02"
+      },
+      {
+        "id": "ch1-03",
+        "speaker": null,
+        "text": "Out of Chaos came Gaia — the Earth herself. And above her rose Uranus, the starry Sky. Earth and Sky became the first king and queen of all there was.",
+        "image": "chapter1-03"
+      },
+      {
+        "id": "ch1-04",
+        "speaker": null,
+        "text": "Their children were giants — the twelve Titans. Powerful, ancient beings who ruled before the gods you know. Their leader-to-be? The youngest: Cronus.",
+        "image": "chapter1-04"
+      },
+      {
+        "id": "ch1-05",
+        "speaker": null,
+        "text": "But Uranus was a fearful father. Some of his children were strange and strong — the one-eyed Cyclopes, the hundred-handed giants — and he locked them away deep inside the Earth. Gaia was furious.",
+        "image": "chapter1-05"
+      },
+      {
+        "id": "ch1-06",
+        "speaker": null,
+        "text": "So Gaia made a plan. She forged a great curved blade — a sickle — and asked her children: who's brave enough to stop their father? Only Cronus stepped up.",
+        "image": "chapter1-06"
+      },
+      {
+        "id": "ch1-07",
+        "speaker": null,
+        "text": "Cronus overthrew his father and became king of the cosmos. For a while, it was a golden age. But Uranus left him with a chilling warning…",
+        "image": "chapter1-07"
+      },
+      {
+        "id": "ch1-08",
+        "speaker": "Hermes",
+        "text": "'Just as you overthrew me,' said Uranus, 'one of YOUR children will overthrow YOU.' …Yikes. Cronus did not take that well.",
+        "image": "chapter1-08"
+      },
+      {
+        "id": "ch1-09",
+        "speaker": null,
+        "text": "So Cronus came up with a terrible solution: every time his wife Rhea had a baby, he swallowed it whole to keep it from ever growing up. One by one — five little gods, gone.",
+        "image": "chapter1-09"
+      },
+      {
+        "id": "ch1-10",
+        "speaker": null,
+        "text": "When her sixth baby — Zeus — was born, Rhea had had enough. She hid the baby away and handed Cronus a stone wrapped in baby blankets instead. He swallowed it without even looking.",
+        "image": "chapter1-10"
+      },
+      {
+        "id": "ch1-11",
+        "speaker": null,
+        "text": "Far away on the island of Crete, baby Zeus grew up in a hidden cave, safe and strong, waiting for the day he'd return.",
+        "image": "chapter1-11"
+      },
+      {
+        "id": "ch1-12",
+        "speaker": null,
+        "text": "Grown and ready, Zeus returned — and tricked Cronus into coughing up the brothers and sisters he'd swallowed: Hades, Poseidon, Hera, Demeter, and Hestia. Fully grown, and furious.",
+        "image": "chapter1-12"
+      },
+      {
+        "id": "ch1-13",
+        "speaker": null,
+        "text": "What followed was a TEN-YEAR war — the Titanomachy. Zeus freed the Cyclopes, who forged him his greatest weapon: the thunderbolt. The hundred-handed giants hurled boulders. The whole world shook.",
+        "image": "chapter1-13"
+      },
+      {
+        "id": "ch1-14",
+        "speaker": null,
+        "text": "The gods won. The defeated Titans were cast into Tartarus, the deepest pit. Then Zeus, Poseidon, and Hades divided the world: the sky, the sea, and the underworld.",
+        "image": "chapter1-14"
+      },
+      {
+        "id": "ch1-15",
+        "speaker": "Hermes",
+        "text": "And THAT is how the age of the gods began. Not bad for a story that starts with a whole lot of nothing, right? Think you were paying attention? Prove it.",
+        "image": "chapter1-15"
+      }
+    ]
+  }
+]

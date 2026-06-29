@@ -23,6 +23,13 @@ struct MainMenuView: View {
                         .foregroundStyle(.secondary)
                         .padding(.bottom, 32)
 
+                    // Learn mode — illustrated, guided myth chapters.
+                    NavigationLink(destination: ChaptersListView()) {
+                        LearnMenuCard()
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom, 12)
+
                     // Trivia mode — the first playable feature.
                     NavigationLink(destination: TriviaSetupView()) {
                         TriviaMenuCard()
@@ -86,6 +93,39 @@ struct HeroCard: View {
             .padding()
         }
         .clipShape(RoundedRectangle(cornerRadius: 16))
+    }
+}
+
+struct LearnMenuCard: View {
+    var body: some View {
+        HStack(spacing: 16) {
+            Image(systemName: "book.pages.fill")
+                .font(.system(size: 40))
+                .foregroundStyle(.white)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Learn the Myths")
+                    .font(.title2)
+                    .bold()
+                    .foregroundStyle(.white)
+                Text("Guided stories from the world of the gods")
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.85))
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundStyle(.white.opacity(0.7))
+                .font(.title3)
+        }
+        .padding()
+        .background(
+            LinearGradient(
+                colors: [.teal, .blue],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            ),
+            in: RoundedRectangle(cornerRadius: 16)
+        )
     }
 }
 
