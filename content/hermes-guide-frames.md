@@ -34,8 +34,8 @@ For each, use Gemini's **edit/"change this image"** feature on the master so eve
 - **`hermes-idle`** — the master itself (mouth closed, eyes open, friendly).
 - **`hermes-talk`** — *"Keep this image identical in every way; change only his mouth to open, as if mid-speech."*
 - **`hermes-blink`** — *"Keep identical; change only his eyes to closed, in a happy blink."*
-- **`hermes-gesture`** — *"Keep identical; raise one hand in a welcoming wave while flipping a small glowing gold coin."*
-- **`hermes-wink`** — *"Keep identical; change only to a playful wink (one eye closed) with a bigger grin."*
+- **`hermes-wave`** — *"Keep identical; raise one hand in a big, friendly welcoming wave toward the viewer while flipping a small glowing gold coin, with a wide grin."* → used for the **intro "summons" entrance**.
+- **`hermes-wink`** — *"Keep identical; change only to a playful wink (one eye closed) with a bigger grin."* → used for the outro and correct quiz answers.
 
 Start with **idle + talk + blink** (enough for a convincing talker); add gesture + wink for personality and quiz reactions.
 
