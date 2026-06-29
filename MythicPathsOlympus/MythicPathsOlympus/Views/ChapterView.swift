@@ -17,12 +17,25 @@ struct ChapterView: View {
                 .padding(.top, 8)
 
             // Image + narration crossfade together as the panel changes.
-            VStack(spacing: 0) {
-                PanelImageView(imageName: panel.image)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .clipped()
+            Group {
+                if let guide = panel.guide {
+                    // Guide takes the (near) full screen, dialogue floats over the bottom.
+                    ZStack(alignment: .bottom) {
+                        GuideSpeaker(base: guide)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .clipped()
+                        NarrationCard(speaker: panel.speaker, text: panel.text, glass: true)
+                            .padding()
+                    }
+                } else {
+                    VStack(spacing: 0) {
+                        PanelImageView(imageName: panel.image)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .clipped()
 
-                NarrationCard(speaker: panel.speaker, text: panel.text)
+                        NarrationCard(speaker: panel.speaker, text: panel.text)
+                    }
+                }
             }
             .id(index)
             .transition(.opacity)
@@ -98,6 +111,8 @@ private struct PanelImageView: View {
 private struct NarrationCard: View {
     let speaker: String?
     let text: String
+    /// When true, uses a translucent material card (for floating over full-bleed art).
+    var glass: Bool = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -115,7 +130,13 @@ private struct NarrationCard: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
-        .background(Color(.secondarySystemBackground))
+        .background {
+            if glass {
+                RoundedRectangle(cornerRadius: 16).fill(.ultraThinMaterial)
+            } else {
+                Color(.secondarySystemBackground)
+            }
+        }
     }
 }
 

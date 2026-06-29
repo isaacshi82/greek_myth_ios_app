@@ -9,7 +9,8 @@
         "id": "ch1-01",
         "speaker": "Hermes",
         "text": "Hey — Hermes here, messenger of the gods, fastest feet on Olympus. Before there were gods throwing lightning and heroes slaying monsters, there was… nothing. Want to know how it all started? Keep up.",
-        "image": "chapter1-01"
+        "image": "chapter1-01",
+        "guide": "hermes"
       },
       {
         "id": "ch1-02",

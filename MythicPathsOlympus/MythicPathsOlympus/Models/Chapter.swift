@@ -9,6 +9,9 @@ struct StoryPanel: Identifiable, Codable {
     /// Asset name for the illustration (e.g. "chapter1-01"). Falls back to a
     /// placeholder until the real art is added, so the chapter is playable now.
     let image: String
+    /// If set (e.g. "hermes"), this panel shows the animated guide full-bleed
+    /// instead of a static illustration. Looks for "<guide>-idle/-talk/-blink".
+    let guide: String?
 }
 
 /// A "Learn" chapter: a sequence of illustrated panels that ends by handing off
