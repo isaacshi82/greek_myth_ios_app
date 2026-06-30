@@ -25,7 +25,9 @@
 > *Don't worry about an exact count — image models can't hit "twelve" reliably, so this framing implies "many." The narration teaches the number. Keep them human-shaped giants, NOT monsters (the Cyclopes and hundred-handed giants are separate, in chapter1-05).*
 
 ### chapter1-05 — Uranus the cruel father
-> *[STYLE]* A sorrowful Gaia (primordial Earth-goddess, hair of roots and leaves); trapped beneath her glowing surface are monstrous shapes — one-eyed Cyclopes and hundred-handed giants — locked deep inside the Earth. Dramatic underground glow, oppressive and sad.
+> *[STYLE]* A monumental vision of **Gaia as the living Earth herself** — her colossal, sorrowful face and form emerge from a vast landscape of stone, roots, and mountains; she IS the Earth, not a person standing on it. A cutaway shows deep beneath the surface, inside her: her monstrous children imprisoned in dark stone caverns — hulking one-eyed Cyclopes and shadowy hundred-handed giants, locked in the rock and reaching upward, outlined by a faint cold inner glow. Gaia weeps — a mother whose children have been buried inside her by Uranus. Somber, oppressive, mournful; deep earthy browns and cold blues. NOT fiery, NOT molten lava, NOT a hellish pit (this is inside the Earth, not Tartarus).
+
+> *Key idea: Gaia and the Earth are the same being. Show her vast and merged with the landscape, with the prisoners deep within — not a normal-sized woman sitting beside a lava pool.*
 
 ### chapter1-06 — Cronus rises
 > *[STYLE]* The young Titan Cronus (sharp jaw, intense dark eyes, long dark hair, dark armor) grips a giant gleaming curved sickle with a determined glare; his mother Gaia hands it to him from the shadows. Tense, heroic rim lighting.
