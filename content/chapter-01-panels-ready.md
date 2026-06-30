@@ -20,7 +20,7 @@
 > *[STYLE]* Gaia, a majestic primordial Earth-goddess with flowing hair of roots and leaves and skin like warm stone, rising from a landscape of mountains and forests below; Uranus, a vast primordial Sky-god formed of the night sky and glowing constellations, arching above her. The first king and queen of all. Epic, reverent, wide composition.
 
 ### chapter1-04 — The twelve Titans
-> *[STYLE]* A group of **twelve** colossal, regal, **human-shaped** Titans — six gods and six goddesses — standing across a primordial landscape. **Cronus is one of the twelve**, stepping forward at the front: a tall, imposing young Titan with a sharp jaw, intense dark eyes, long dark hair, and dark earth-toned armor. Twelve figures in total (not thirteen). Awe-inspiring scale, low heroic camera angle.
+> *[STYLE]* A group of **twelve** colossal, regal, **human-shaped** Titans — six gods and six goddesses — standing across a vast primordial landscape at the dawn of the world: jagged, newborn mountains and churning seas stretch to the horizon, drifting golden mist hangs low, and a faint volcanic glow lights the distance. Above them an immense sky is streaked with glowing constellations and warm golden dawn light — a wild, untamed Golden-Age world before mortals exist. **Cronus is one of the twelve**, stepping forward at the front: a tall, imposing young Titan with a sharp jaw, intense dark eyes, long dark hair, and dark earth-toned armor. Twelve figures in total (not thirteen). Awe-inspiring scale, low heroic camera angle.
 
 > *Note: the Titans are giant humanoids, NOT monsters. The one-eyed Cyclopes and hundred-handed giants are separate (they appear in chapter1-05), so keep all twelve here human-shaped.*
 
