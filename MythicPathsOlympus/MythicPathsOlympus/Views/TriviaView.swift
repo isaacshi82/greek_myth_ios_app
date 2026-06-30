@@ -2,8 +2,11 @@ import SwiftUI
 
 struct TriviaView: View {
     @StateObject private var model: TriviaViewModel
+    /// Remembered so a finished round can credit the right category in progress.
+    private let category: String?
 
     init(category: String? = nil, difficulty: String? = nil) {
+        self.category = category
         _model = StateObject(wrappedValue: TriviaViewModel(category: category, difficulty: difficulty))
     }
 
@@ -22,6 +25,11 @@ struct TriviaView: View {
         .navigationTitle("Trivia Challenge")
         .navigationBarTitleDisplayMode(.inline)
         .lockOrientation(.portrait)   // quiz is portrait even when reached from the landscape chapter
+        .onChange(of: model.isFinished) { _, finished in
+            if finished {
+                ProgressStore.shared.recordQuiz(category: category, score: model.score, total: model.totalQuestions)
+            }
+        }
     }
 
     private var quiz: some View {

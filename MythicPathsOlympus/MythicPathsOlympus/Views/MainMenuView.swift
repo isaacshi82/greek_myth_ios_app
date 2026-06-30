@@ -4,6 +4,8 @@ struct MainMenuView: View {
     /// Story mode is built but parked for now. Flip to `true` to show the hero cards again.
     let showStoryMode = false
 
+    @ObservedObject private var progress = ProgressStore.shared
+
     let heroes: [Hero] = [
         Hero(id: "perseus", name: "Perseus", subtitle: "Slayer of Medusa", description: "Son of Zeus, destined to face the Gorgon."),
         Hero(id: "theseus", name: "Theseus", subtitle: "Hero of Athens", description: "The prince who entered the Labyrinth."),
@@ -33,6 +35,13 @@ struct MainMenuView: View {
                     // Trivia mode — the first playable feature.
                     NavigationLink(destination: TriviaSetupView()) {
                         TriviaMenuCard()
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom, 12)
+
+                    // Collection — the gods/heroes you've earned through play.
+                    NavigationLink(destination: CollectionView()) {
+                        CollectionMenuCard(collected: progress.collectedCount, total: Pantheon.all.count)
                     }
                     .padding(.horizontal)
                     .padding(.bottom, 24)
@@ -121,6 +130,42 @@ struct LearnMenuCard: View {
         .background(
             LinearGradient(
                 colors: [.teal, .blue],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            ),
+            in: RoundedRectangle(cornerRadius: 16)
+        )
+    }
+}
+
+struct CollectionMenuCard: View {
+    let collected: Int
+    let total: Int
+
+    var body: some View {
+        HStack(spacing: 16) {
+            Image(systemName: "trophy.fill")
+                .font(.system(size: 40))
+                .foregroundStyle(.white)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Your Pantheon")
+                    .font(.title2)
+                    .bold()
+                    .foregroundStyle(.white)
+                Text("\(collected) of \(total) figures collected")
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.85))
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundStyle(.white.opacity(0.7))
+                .font(.title3)
+        }
+        .padding()
+        .background(
+            LinearGradient(
+                colors: [.orange, .yellow],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             ),

@@ -39,6 +39,9 @@ struct ChapterView: View {
         }
         .contentShape(Rectangle())
         .onTapGesture { if !isLast { advance() } }
+        .onChange(of: index) { _, _ in
+            if isLast { ProgressStore.shared.completeChapter(chapter.id) }
+        }
         .statusBarHidden(true)
         .toolbar(.hidden, for: .navigationBar)
         .navigationBarBackButtonHidden(true)
