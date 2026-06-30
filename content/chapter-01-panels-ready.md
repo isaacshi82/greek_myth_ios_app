@@ -19,10 +19,10 @@
 ### chapter1-03 — Gaia & Uranus
 > *[STYLE]* Gaia, a majestic primordial Earth-goddess with flowing hair of roots and leaves and skin like warm stone, rising from a landscape of mountains and forests below; Uranus, a vast primordial Sky-god formed of the night sky and glowing constellations, arching above her. The first king and queen of all. Epic, reverent, wide composition.
 
-### chapter1-04 — The twelve Titans
-> *[STYLE]* A group of **twelve** colossal, regal, **human-shaped** Titans — six gods and six goddesses — standing across a vast primordial landscape at the dawn of the world: jagged, newborn mountains and churning seas stretch to the horizon, drifting golden mist hangs low, and a faint volcanic glow lights the distance. Above them an immense sky is streaked with glowing constellations and warm golden dawn light — a wild, untamed Golden-Age world before mortals exist. **Cronus is one of the twelve**, stepping forward at the front: a tall, imposing young Titan with a sharp jaw, intense dark eyes, long dark hair, and dark earth-toned armor. Twelve figures in total (not thirteen). Awe-inspiring scale, low heroic camera angle.
+### chapter1-04 — The Titans
+> *[STYLE]* A mighty race of colossal, regal, **human-shaped** Titans — gods and goddesses — gathered across a vast primordial landscape at the dawn of the world: jagged, newborn mountains and churning seas stretch to the horizon, drifting golden mist hangs low, and a faint volcanic glow lights the distance. Above them an immense sky is streaked with glowing constellations and warm golden dawn light — a wild, untamed Golden-Age world before mortals exist. In the foreground, the young Titan **Cronus** stands prominently and steps forward: tall and imposing, sharp jaw, intense dark eyes, long dark hair, dark earth-toned armor. A few other mighty Titans flank him, and many more towering figures recede as silhouettes into the golden mist behind — a vast, innumerable host. Awe-inspiring scale, low heroic camera angle.
 
-> *Note: the Titans are giant humanoids, NOT monsters. The one-eyed Cyclopes and hundred-handed giants are separate (they appear in chapter1-05), so keep all twelve here human-shaped.*
+> *Don't worry about an exact count — image models can't hit "twelve" reliably, so this framing implies "many." The narration teaches the number. Keep them human-shaped giants, NOT monsters (the Cyclopes and hundred-handed giants are separate, in chapter1-05).*
 
 ### chapter1-05 — Uranus the cruel father
 > *[STYLE]* A sorrowful Gaia (primordial Earth-goddess, hair of roots and leaves); trapped beneath her glowing surface are monstrous shapes — one-eyed Cyclopes and hundred-handed giants — locked deep inside the Earth. Dramatic underground glow, oppressive and sad.
