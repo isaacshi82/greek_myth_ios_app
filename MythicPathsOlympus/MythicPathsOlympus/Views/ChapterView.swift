@@ -1,83 +1,132 @@
 import SwiftUI
 
-/// Plays one illustrated chapter: image (with a slow Ken Burns drift) + narration,
-/// tap-to-advance with a crossfade, ending in a button to the matching quiz.
+/// Plays one illustrated chapter in landscape: full-bleed art (with a slow Ken
+/// Burns drift) and narration floating over the bottom in a glass card.
+/// Tap anywhere to advance with a crossfade, ending in a button to the quiz.
 struct ChapterView: View {
     let chapter: Chapter
     @State private var index = 0
+    @Environment(\.dismiss) private var dismiss
 
     private var panel: StoryPanel { chapter.panels[index] }
     private var isLast: Bool { index == chapter.panels.count - 1 }
 
     var body: some View {
-        VStack(spacing: 0) {
-            ProgressView(value: Double(index + 1), total: Double(chapter.panels.count))
-                .tint(.accentColor)
-                .padding(.horizontal)
-                .padding(.top, 8)
+        ZStack {
+            Color.black.ignoresSafeArea()
 
-            // Image + narration crossfade together as the panel changes.
+            // Full-bleed art (scene art fills the screen; the square guide bust
+            // is centered over a themed backdrop so Hermes' head isn't cropped).
             Group {
                 if let guide = panel.guide {
-                    // Guide sits large up top; dialogue in a card below (mouth stays visible).
-                    VStack(spacing: 0) {
-                        GuideSpeaker(base: guide)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .clipped()
-
-                        NarrationCard(speaker: panel.speaker, text: panel.text)
-                    }
+                    GuidePanel(base: guide)
                 } else {
-                    VStack(spacing: 0) {
-                        PanelImageView(imageName: panel.image)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .clipped()
-
-                        NarrationCard(speaker: panel.speaker, text: panel.text)
-                    }
+                    PanelImageView(imageName: panel.image)
                 }
             }
             .id(index)
             .transition(.opacity)
-            .contentShape(Rectangle())
-            .onTapGesture { if !isLast { advance() } }
+            .ignoresSafeArea()
 
-            controls
-                .padding()
+            // Floating UI: a slim top bar and the narration overlay at the bottom.
+            VStack(spacing: 0) {
+                topBar
+                Spacer(minLength: 0)
+                narrationOverlay
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 12)
         }
-        .navigationTitle(chapter.title)
-        .navigationBarTitleDisplayMode(.inline)
+        .contentShape(Rectangle())
+        .onTapGesture { if !isLast { advance() } }
+        .statusBarHidden(true)
+        .toolbar(.hidden, for: .navigationBar)
+        .navigationBarBackButtonHidden(true)
+        .lockOrientation(.landscape)
     }
 
-    @ViewBuilder
-    private var controls: some View {
-        if isLast {
-            NavigationLink {
-                TriviaView(category: chapter.quizCategory)
-            } label: {
-                Label("Take the Quiz", systemImage: "checkmark.seal.fill")
-                    .font(.headline)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.accentColor, in: RoundedRectangle(cornerRadius: 12))
+    private var topBar: some View {
+        HStack(spacing: 14) {
+            Button { dismiss() } label: {
+                Image(systemName: "xmark")
+                    .font(.subheadline.weight(.bold))
                     .foregroundStyle(.white)
+                    .padding(10)
+                    .background(.ultraThinMaterial, in: Circle())
             }
-        } else {
-            Button { advance() } label: {
-                HStack {
-                    Text("Continue").font(.headline)
+            ProgressView(value: Double(index + 1), total: Double(chapter.panels.count))
+                .tint(.white)
+                .frame(maxWidth: 260)
+            Spacer(minLength: 0)
+        }
+    }
+
+    private var narrationOverlay: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            if let speaker = panel.speaker {
+                HStack(spacing: 8) {
+                    HermesBadge()
+                    Text(speaker)
+                        .font(.subheadline.weight(.bold))
+                        .foregroundStyle(.purple)
+                }
+            }
+            Text(panel.text)
+                .font(.title3)
+                .foregroundStyle(.white)
+                .fixedSize(horizontal: false, vertical: true)
+
+            if isLast {
+                NavigationLink {
+                    TriviaView(category: chapter.quizCategory)
+                } label: {
+                    Label("Take the Quiz", systemImage: "checkmark.seal.fill")
+                        .font(.headline)
+                        .padding(.vertical, 12)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.accentColor, in: RoundedRectangle(cornerRadius: 12))
+                        .foregroundStyle(.white)
+                }
+            } else {
+                HStack(spacing: 4) {
+                    Spacer()
+                    Text("Tap to continue")
                     Image(systemName: "chevron.right")
                 }
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 12))
+                .font(.subheadline)
+                .foregroundStyle(.white.opacity(0.75))
             }
         }
+        .padding(18)
+        .background {
+            RoundedRectangle(cornerRadius: 18)
+                .fill(.ultraThinMaterial)
+                .overlay(RoundedRectangle(cornerRadius: 18).fill(Color.black.opacity(0.35)))
+        }
+        .frame(maxWidth: 680)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private func advance() {
         guard index < chapter.panels.count - 1 else { return }
         withAnimation(.easeInOut(duration: 0.35)) { index += 1 }
+    }
+}
+
+/// The square guide bust (Hermes), centered and fully visible over a themed
+/// backdrop so the landscape frame never crops his head.
+private struct GuidePanel: View {
+    let base: String
+
+    var body: some View {
+        ZStack {
+            LinearGradient(colors: [Color(red: 0.05, green: 0.13, blue: 0.16),
+                                    Color(red: 0.08, green: 0.06, blue: 0.18)],
+                           startPoint: .top, endPoint: .bottom)
+            GuideSpeaker(base: base)
+                .aspectRatio(1, contentMode: .fit)
+                .frame(maxHeight: .infinity)
+        }
     }
 }
 
@@ -112,39 +161,6 @@ private struct PanelImageView: View {
                 .scaledToFill()
         } else {
             PlaceholderArt(label: imageName)
-        }
-    }
-}
-
-/// Narration text with an optional speaker badge for the guide.
-private struct NarrationCard: View {
-    let speaker: String?
-    let text: String
-    /// When true, uses a translucent material card (for floating over full-bleed art).
-    var glass: Bool = false
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            if let speaker {
-                HStack(spacing: 8) {
-                    HermesBadge()
-                    Text(speaker)
-                        .font(.subheadline.weight(.bold))
-                        .foregroundStyle(.purple)
-                }
-            }
-            Text(text)
-                .font(.title3)
-                .fixedSize(horizontal: false, vertical: true)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding()
-        .background {
-            if glass {
-                RoundedRectangle(cornerRadius: 16).fill(.ultraThinMaterial)
-            } else {
-                Color(.secondarySystemBackground)
-            }
         }
     }
 }
