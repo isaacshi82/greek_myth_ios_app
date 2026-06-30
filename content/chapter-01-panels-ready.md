@@ -53,7 +53,9 @@
 > *Key idea: it's a trick. The baby must read as HIDDEN/secret (shadowed, behind her); the stone-bundle is what she hands over. Cronus same size as Rhea, both Titans.*
 
 ### chapter1-11 — Zeus grows up in secret
-> *[STYLE]* A lush, hidden cave on a Greek island; a faintly glowing baby Zeus (tuft of dark hair, golden aura) tended by gentle nymphs and a goat. Warm, safe, magical, secret.
+> *[STYLE]* A lush, hidden cave on a Greek island, glittering with crystals and a small waterfall. Gentle nymphs tend a swaddled baby Zeus (tuft of dark hair) wrapped in a **soft, diffuse golden glow — NOT a hard halo ring or disc behind his head** (avoid any deity-halo look). The goat **Amalthea** (who nurses him in the myth) stands nearby. Warm, safe, magical, secret.
+
+> *Keep the goat — that's Amalthea, mythologically correct. Just make the baby's light a gentle ambient glow, no circular halo.*
 
 ### chapter1-12 — Zeus frees his siblings
 > *[STYLE]* A triumphant young Zeus (athletic young man, dark curling hair, short beard, crackling lightning, white-and-gold chiton) as five adult gods — including Poseidon with a trident and a shadowy Hades — burst out in shafts of light from a staggering King Cronus. Action, energy, golden light.
