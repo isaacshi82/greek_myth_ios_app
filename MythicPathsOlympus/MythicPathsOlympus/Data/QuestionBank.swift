@@ -23,4 +23,10 @@ enum QuestionBank {
             (difficulty == nil || question.difficulty == difficulty)
         }
     }
+
+    /// The questions with the given ids (used by end-of-chapter review quizzes).
+    static func questions(ids: [String]) -> [TriviaQuestion] {
+        let wanted = Set(ids)
+        return all.filter { wanted.contains($0.id) }
+    }
 }

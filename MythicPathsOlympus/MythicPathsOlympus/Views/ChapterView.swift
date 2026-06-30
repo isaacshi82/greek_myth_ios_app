@@ -55,14 +55,17 @@ struct ChapterView: View {
     /// Square art / guide: image fills one half, narration on a dark panel beside it.
     private var splitLayout: some View {
         HStack(spacing: 0) {
+            // Only the text fades; the dark panel stays put so the blended seam
+            // always matches (no flickering line as the narration appears).
             narration(split: true)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                .background(splitSide)
                 .opacity(revealText ? 1 : 0)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                .background(splitSide.ignoresSafeArea())
 
             artView
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .clipped()
+                .ignoresSafeArea()
                 .id(index)
                 .transition(.opacity)
                 // Melt the image's inner edge into the text panel for a soft seam.
@@ -73,7 +76,6 @@ struct ChapterView: View {
                         .allowsHitTesting(false)
                 }
         }
-        .ignoresSafeArea()
     }
 
     /// Wide art: fills the screen; narration sits at the bottom over a gradient scrim.
@@ -89,10 +91,10 @@ struct ChapterView: View {
                 .background(
                     LinearGradient(colors: [.clear, .black.opacity(0.5), .black.opacity(0.85)],
                                    startPoint: .top, endPoint: .bottom)
+                        .ignoresSafeArea()
                 )
                 .opacity(revealText ? 1 : 0)
         }
-        .ignoresSafeArea()
     }
 
     // MARK: - Pieces
@@ -149,7 +151,11 @@ struct ChapterView: View {
     private var footer: some View {
         if isLast {
             NavigationLink {
-                TriviaView(category: chapter.quizCategory)
+                if let ids = chapter.quizQuestionIDs, !ids.isEmpty {
+                    TriviaView(questionIDs: ids, category: chapter.quizCategory)
+                } else {
+                    TriviaView(category: chapter.quizCategory)
+                }
             } label: {
                 Label("Take the Quiz", systemImage: "checkmark.seal.fill")
                     .font(.headline)

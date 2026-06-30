@@ -10,6 +10,13 @@ struct TriviaView: View {
         _model = StateObject(wrappedValue: TriviaViewModel(category: category, difficulty: difficulty))
     }
 
+    /// End-of-chapter review: quiz only on the questions the chapter taught.
+    init(questionIDs: [String], category: String?) {
+        self.category = category
+        let pool = QuestionBank.questions(ids: questionIDs)
+        _model = StateObject(wrappedValue: TriviaViewModel(roundSize: pool.count, pool: pool))
+    }
+
     var body: some View {
         Group {
             if model.isFinished {

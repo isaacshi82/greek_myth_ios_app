@@ -22,5 +22,8 @@ struct Chapter: Identifiable, Codable {
     let unit: String
     /// Must match a `TriviaQuestion.category` so the end-of-chapter quiz lines up.
     let quizCategory: String
+    /// Optional: specific question IDs to quiz on, so the end-of-chapter quiz only
+    /// asks what this chapter actually taught. Falls back to the whole category.
+    let quizQuestionIDs: [String]?
     let panels: [StoryPanel]
 }

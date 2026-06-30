@@ -4,6 +4,7 @@
     "title": "The Birth of the Gods",
     "unit": "The Beginning",
     "quizCategory": "Titans & Creation",
+    "quizQuestionIDs": ["q28", "q31", "q32", "q33", "q34", "q36", "q37", "q38", "q39", "q41", "q42"],
     "panels": [
       {
         "id": "ch1-01",
