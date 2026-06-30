@@ -1,37 +1,47 @@
 import SwiftUI
 
-/// An animated "talking" guide built by swapping a few still frames
-/// (e.g. `hermes-idle` / `hermes-talk` / `hermes-blink`). It talk-loops while
-/// on screen with an occasional blink. Falls back to a branded placeholder
-/// until the real frames are added — same pattern as the panel art.
+/// An animated "talking" guide built by swapping still frames
+/// (`hermes-idle` / `-talk` / `-blink` / `-wink`). Talk burst every 5s, a blink
+/// every 8.5s, and a playful wink every 13s — all off-cycle so it feels organic.
+/// Falls back to a branded placeholder until the frames are added.
 struct GuideSpeaker: View {
     /// Frame asset base name, e.g. "hermes".
     let base: String
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 0.1)) { context in
-            content(for: frameSuffix(at: context.date.timeIntervalSinceReferenceDate))
+            GuideFrameImage(
+                name: frameName(at: context.date.timeIntervalSinceReferenceDate),
+                placeholderBase: base
+            )
         }
     }
 
-    /// A short talk burst (~1s of mouth flaps) at the start of each 5s window,
-    /// idle the rest of the time, with a quick blink every 8.5s (off-cycle from talk).
-    private func frameSuffix(at t: TimeInterval) -> String {
-        if t.truncatingRemainder(dividingBy: 8.5) < 0.2 { return "blink" }
-        let inWindow = t.truncatingRemainder(dividingBy: 5)
-        if inWindow < 1.0 {
-            return Int(inWindow / 0.2).isMultiple(of: 2) ? "talk" : "idle"
+    /// Pick the frame for the current time, falling back to idle if a frame is missing.
+    private func frameName(at t: TimeInterval) -> String {
+        let suffix: String
+        if t.truncatingRemainder(dividingBy: 8.5) < 0.2 {
+            suffix = "blink"
+        } else if t.truncatingRemainder(dividingBy: 13) < 0.35 {
+            suffix = "wink"
+        } else {
+            let inWindow = t.truncatingRemainder(dividingBy: 5)
+            suffix = inWindow < 1.0 ? (Int(inWindow / 0.2).isMultiple(of: 2) ? "talk" : "idle") : "idle"
         }
-        return "idle"
+        let candidate = "\(base)-\(suffix)"
+        return UIImage(named: candidate) != nil ? candidate : "\(base)-idle"
     }
+}
 
-    @ViewBuilder
-    private func content(for suffix: String) -> some View {
-        if let image = UIImage(named: "\(base)-\(suffix)") ?? UIImage(named: "\(base)-idle") {
-            // Color.clear sets the bounds; the image fills as a clipped overlay so
-            // its scaledToFill size never widens the layout past the screen.
-            // Scaling slightly from the top crops off the bottom edge, where the
-            // frames differ — which would otherwise flicker when they swap.
+/// Renders a single guide frame (or a placeholder if missing). Scales slightly
+/// from the top so the frames' differing bottom edge is cropped away — which
+/// would otherwise flicker when frames swap.
+struct GuideFrameImage: View {
+    let name: String
+    var placeholderBase: String? = nil
+
+    var body: some View {
+        if let image = UIImage(named: name) {
             Color.clear
                 .overlay {
                     Image(uiImage: image)
@@ -41,7 +51,7 @@ struct GuideSpeaker: View {
                 }
                 .clipped()
         } else {
-            GuidePlaceholder(base: base)
+            GuidePlaceholder(base: placeholderBase ?? name)
         }
     }
 }

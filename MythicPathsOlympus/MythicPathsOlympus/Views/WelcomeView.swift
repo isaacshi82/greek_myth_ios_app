@@ -19,12 +19,18 @@ struct WelcomeView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            // TODO: swap to a "hermes-wave" entrance frame once that art exists.
-            GuideSpeaker(base: "hermes")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .clipped()
-                .scaleEffect(entered ? 1 : 0.85)
-                .opacity(entered ? 1 : 0)
+            // Hermes waves hello during the greeting beat, then talks.
+            Group {
+                if beat == 0 {
+                    GuideFrameImage(name: "hermes-wave", placeholderBase: "hermes")
+                } else {
+                    GuideSpeaker(base: "hermes")
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .clipped()
+            .scaleEffect(entered ? 1 : 0.85)
+            .opacity(entered ? 1 : 0)
 
             dialogue
         }
