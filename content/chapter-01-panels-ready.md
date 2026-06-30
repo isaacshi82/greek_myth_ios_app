@@ -61,7 +61,9 @@
 > *[STYLE]* A triumphant young Zeus (athletic young man, dark curling hair, short beard, crackling lightning, white-and-gold chiton) as five adult gods — including Poseidon with a trident and a shadowy Hades — burst out in shafts of light from a staggering King Cronus. Action, energy, golden light.
 
 ### chapter1-13 — The Titanomachy
-> *[STYLE]* Epic battle across a storming sky: the young gods versus the giant Titans. Young Zeus hurls crackling thunderbolts; hundred-handed giants fling boulders. Cinematic chaos, electric, dramatic scale.
+> *[STYLE]* Epic battle across a storming sky: the young gods versus the giant Titans. Young Zeus hurls crackling thunderbolts; the hundred-handed giants (Hecatoncheires) fling **plain, solid boulders of rock — NO faces in the rocks**. Poseidon (teal, trident) and a dark-cloaked Hades fight alongside him; defeated Titans are bound in chains. Behind them, a **painted, illustrated stormy cosmos with stars** — NOT a photographic spiral galaxy. **No sea serpents, dragons, or extra monsters.** Cinematic chaos, electric, dramatic scale.
+
+> *Fixes from a prior render: boulders are just rock (no screaming faces); no dragon/sea-creature; cosmic sky should be painted to match the style, not a real photo of a galaxy.*
 
 ### chapter1-14 — Victory and the division of the world
 > *[STYLE]* Three victorious gods standing over a glowing, divided world: Zeus wreathed in lightning (the sky), Poseidon with his trident (the sea), and a shadowy Hades (the underworld). Triumphant, balanced, regal composition.
