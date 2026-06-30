@@ -35,7 +35,9 @@
 > *Emotions: Gaia = sorrow + vengeance (NOT joy); Cronus = bold, fierce, ambitious. Tone = secret conspiracy, not celebration. Keep Gaia consistent with chapter1-05 (use it as a reference image).*
 
 ### chapter1-07 — Cronus takes the throne
-> *[STYLE]* Cronus as king — older, crowned, broad-shouldered, in a dark robe patterned with stars and cosmos motifs — seated on a massive ancient stone throne; the sky dims behind him and a faint, ominous ghostly face of Uranus forms in the clouds. Foreboding, regal.
+> *[STYLE]* Cronus as king — older, crowned, broad-shouldered, in a dark robe patterned with stars and cosmos motifs — seated on a massive ancient stone throne at the height of his power in the Golden Age. **Beside him stands his queen and wife, the Titaness Rhea** — graceful, with long flowing hair, warm features, and a draped robe (this introduces her before panels 9–10). The sky dims behind them and a faint, ominous ghostly face of Uranus forms in the clouds. Foreboding, regal.
+
+> *Establishes Rhea early so she isn't a stranger when she grieves (09) and schemes (10). Keep her design consistent across 07/09/10 — use this as her reference image.*
 
 ### chapter1-08 — The prophecy
 > *[STYLE]* Extreme close-up of King Cronus's fearful, paranoid face (crowned, grim) lit by eerie cold light; glowing **abstract** prophetic symbols swirl around his head — constellation lines and mystical runic shapes, **purely decorative, NOT letters or readable words**. Unsettling, psychological, high contrast.
