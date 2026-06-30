@@ -21,6 +21,7 @@ struct TriviaView: View {
         }
         .navigationTitle("Trivia Challenge")
         .navigationBarTitleDisplayMode(.inline)
+        .lockOrientation(.portrait)   // quiz is portrait even when reached from the landscape chapter
     }
 
     private var quiz: some View {
