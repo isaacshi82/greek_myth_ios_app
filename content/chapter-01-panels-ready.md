@@ -30,7 +30,9 @@
 > *Composition: top = Gaia's face + the surface world; bottom = the underground prison, straight down. One subject only (Gaia). If a second face appears, regenerate.*
 
 ### chapter1-06 — Cronus rises
-> *[STYLE]* The young Titan Cronus (sharp jaw, intense dark eyes, long dark hair, dark armor) grips a giant gleaming curved sickle with a determined glare; his mother Gaia hands it to him from the shadows. Tense, heroic rim lighting.
+> *[STYLE]* A tense, secret moment in a shadowed, hidden cavern at the edge of the primordial world; far above and behind them, the vast starry night sky of **Uranus looms** — the father they are about to strike. In near-darkness, the one bright light is a giant gleaming curved **sickle** (cold, adamantine glint). **Gaia** — the Earth-goddess with hair of roots and leaves and skin like cracked stone (same design as chapter1-05) — hands the sickle to her son from the shadows; her face is **not happy: grieving and vengeful, grim and resolute**, a wronged mother bent on revenge. The young Titan **Cronus** (sharp jaw, intense dark eyes, long dark hair, dark earth-toned armor) takes it with a **fierce, determined, darkly ambitious glare**. Conspiratorial and ominous; deep shadows, dramatic chiaroscuro, heroic rim lighting.
+
+> *Emotions: Gaia = sorrow + vengeance (NOT joy); Cronus = bold, fierce, ambitious. Tone = secret conspiracy, not celebration. Keep Gaia consistent with chapter1-05 (use it as a reference image).*
 
 ### chapter1-07 — Cronus takes the throne
 > *[STYLE]* Cronus as king — older, crowned, broad-shouldered, in a dark robe patterned with stars and cosmos motifs — seated on a massive ancient stone throne; the sky dims behind him and a faint, ominous ghostly face of Uranus forms in the clouds. Foreboding, regal.
