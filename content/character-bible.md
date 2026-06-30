@@ -18,13 +18,13 @@ As more chapters arrive, the same gods reappear. To keep them recognizable:
 ## The six children of Cronus (Zeus's siblings)
 
 ### Zeus — *signature: white + gold, lightning*
-> A regal young-to-middle god with dark curly hair and a short dark beard, piercing eyes, a white chiton with gold trim, faint crackling lightning around him. Commanding and heroic.
+> A vigorous young-to-middle-aged god with **dark curly hair and a short dark beard (NOT old, NOT grey/white)** — in the origin story he has just come of age. Piercing eyes, a white chiton with gold trim, faint crackling lightning around him. Commanding and heroic.
 
 ### Poseidon — *signature: sea-green/teal, trident*
-> A rugged, powerful god with a wild teal-green hair and beard, weathered sea-toned skin, blue-green robes with wave and barnacle motifs, holding a golden trident. Stormy and proud.
+> A rugged, powerful god with **normal human skin (NOT green/monstrous — he is a god, not a merman)**, blue-green hair and beard, teal-and-blue robes with wave motifs, holding a golden trident. Stormy and proud.
 
 ### Hades — *signature: pale skin, dark shadow robes*
-> A pale, somber god with dark hair, regal but grim, in a dark robe patterned with faint stars and shadow; cold dark wisps drift around him. Quiet, brooding, kingly.
+> A pale, somber god with dark hair, regal but grim, in **dark underworld robes of black, charcoal, and deep violet with shadow and ember motifs — NOT a starry/galaxy/cosmos robe (stars belong to the sky, not the underworld)**. Cold dark wisps drift around him. Quiet, brooding, kingly.
 
 ### Hera — *signature: royal red/purple, peacock + diadem*
 > An elegant, proud queen-goddess with a golden diadem, rich deep-red and purple robes, and peacock-feather motifs (eye-spotted feathers). Regal and a little severe.
