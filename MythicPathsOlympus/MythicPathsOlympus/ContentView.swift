@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("hasSeenWelcome") private var hasSeenWelcome = false
+
     var body: some View {
-        MainMenuView()
+        ZStack {
+            if hasSeenWelcome {
+                MainMenuView()
+                    .transition(.opacity)
+            } else {
+                WelcomeView {
+                    withAnimation(.easeInOut) { hasSeenWelcome = true }
+                }
+                .transition(.opacity)
+            }
+        }
     }
 }
 

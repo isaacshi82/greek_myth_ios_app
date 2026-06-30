@@ -1,6 +1,11 @@
 import SwiftUI
 
 struct MainMenuView: View {
+    /// Story mode is built but parked for now. Flip to `true` to show the hero cards again.
+    let showStoryMode = false
+
+    @ObservedObject private var progress = ProgressStore.shared
+
     let heroes: [Hero] = [
         Hero(id: "perseus", name: "Perseus", subtitle: "Slayer of Medusa", description: "Son of Zeus, destined to face the Gorgon."),
         Hero(id: "theseus", name: "Theseus", subtitle: "Hero of Athens", description: "The prince who entered the Labyrinth."),
@@ -20,16 +25,39 @@ struct MainMenuView: View {
                         .foregroundStyle(.secondary)
                         .padding(.bottom, 32)
 
-                    Text("Choose your hero")
-                        .font(.headline)
-                        .padding(.bottom, 16)
+                    // Learn mode — illustrated, guided myth chapters.
+                    NavigationLink(destination: ChaptersListView()) {
+                        LearnMenuCard()
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom, 12)
 
-                    ForEach(heroes) { hero in
-                        NavigationLink(destination: Text("Story for \(hero.name) — coming soon")) {
-                            HeroCard(hero: hero)
+                    // Trivia mode — the first playable feature.
+                    NavigationLink(destination: TriviaSetupView()) {
+                        TriviaMenuCard()
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom, 12)
+
+                    // Collection — the gods/heroes you've earned through play.
+                    NavigationLink(destination: CollectionView()) {
+                        CollectionMenuCard(collected: progress.collectedCount, total: Pantheon.all.count)
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom, 24)
+
+                    if showStoryMode {
+                        Text("Choose your hero")
+                            .font(.headline)
+                            .padding(.bottom, 16)
+
+                        ForEach(heroes) { hero in
+                            NavigationLink(destination: Text("Story for \(hero.name) — coming soon")) {
+                                HeroCard(hero: hero)
+                            }
+                            .padding(.horizontal)
+                            .padding(.bottom, 12)
                         }
-                        .padding(.horizontal)
-                        .padding(.bottom, 12)
                     }
                 }
             }
@@ -74,6 +102,108 @@ struct HeroCard: View {
             .padding()
         }
         .clipShape(RoundedRectangle(cornerRadius: 16))
+    }
+}
+
+struct LearnMenuCard: View {
+    var body: some View {
+        HStack(spacing: 16) {
+            Image(systemName: "book.pages.fill")
+                .font(.system(size: 40))
+                .foregroundStyle(.white)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Learn the Myths")
+                    .font(.title2)
+                    .bold()
+                    .foregroundStyle(.white)
+                Text("Guided stories from the world of the gods")
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.85))
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundStyle(.white.opacity(0.7))
+                .font(.title3)
+        }
+        .padding()
+        .background(
+            LinearGradient(
+                colors: [.teal, .blue],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            ),
+            in: RoundedRectangle(cornerRadius: 16)
+        )
+    }
+}
+
+struct CollectionMenuCard: View {
+    let collected: Int
+    let total: Int
+
+    var body: some View {
+        HStack(spacing: 16) {
+            Image(systemName: "trophy.fill")
+                .font(.system(size: 40))
+                .foregroundStyle(.white)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Your Pantheon")
+                    .font(.title2)
+                    .bold()
+                    .foregroundStyle(.white)
+                Text("\(collected) of \(total) figures collected")
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.85))
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundStyle(.white.opacity(0.7))
+                .font(.title3)
+        }
+        .padding()
+        .background(
+            LinearGradient(
+                colors: [.orange, .yellow],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            ),
+            in: RoundedRectangle(cornerRadius: 16)
+        )
+    }
+}
+
+struct TriviaMenuCard: View {
+    var body: some View {
+        HStack(spacing: 16) {
+            Image(systemName: "questionmark.circle.fill")
+                .font(.system(size: 40))
+                .foregroundStyle(.white)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Trivia Challenge")
+                    .font(.title2)
+                    .bold()
+                    .foregroundStyle(.white)
+                Text("Test your knowledge of the myths")
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.85))
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundStyle(.white.opacity(0.7))
+                .font(.title3)
+        }
+        .padding()
+        .background(
+            LinearGradient(
+                colors: [.indigo, .purple],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            ),
+            in: RoundedRectangle(cornerRadius: 16)
+        )
     }
 }
 

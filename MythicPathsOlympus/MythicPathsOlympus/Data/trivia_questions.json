@@ -1,0 +1,782 @@
+[
+  {
+    "id": "q01",
+    "question": "Who is the king of the Greek gods and ruler of Mount Olympus?",
+    "answers": ["Hades", "Zeus", "Apollo", "Poseidon"],
+    "correctIndex": 1,
+    "explanation": "Zeus, god of the sky and thunder, led the gods in overthrowing the Titans and became king of Olympus.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q02",
+    "question": "Which goddess sprang fully grown and armored from the head of Zeus?",
+    "answers": ["Hera", "Aphrodite", "Athena", "Artemis"],
+    "correctIndex": 2,
+    "explanation": "Athena, goddess of wisdom and war, burst from Zeus's forehead after he swallowed her mother, Metis.",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q03",
+    "question": "Who was the Greek goddess of the hearth, home, and the sacred fire?",
+    "answers": ["Demeter", "Hestia", "Hebe", "Iris"],
+    "correctIndex": 1,
+    "explanation": "Hestia, the eldest child of Cronus and Rhea, tended the ever-burning fire of Olympus and was honored first in offerings.",
+    "category": "Olympians",
+    "difficulty": "hard",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q04",
+    "question": "Which hero beheaded the Gorgon Medusa?",
+    "answers": ["Theseus", "Heracles", "Perseus", "Jason"],
+    "correctIndex": 2,
+    "explanation": "Perseus used the reflection in his polished shield to avoid Medusa's petrifying gaze, then cut off her head.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q05",
+    "question": "Which hero escaped the Labyrinth by following a ball of thread?",
+    "answers": ["Theseus", "Odysseus", "Achilles", "Bellerophon"],
+    "correctIndex": 0,
+    "explanation": "Theseus slew the Minotaur and found his way out using thread given to him by Ariadne, the king's daughter.",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Encyclopaedia Britannica"
+  },
+  {
+    "id": "q06",
+    "question": "Who led the Argonauts on the quest for the Golden Fleece?",
+    "answers": ["Heracles", "Jason", "Perseus", "Cadmus"],
+    "correctIndex": 1,
+    "explanation": "Jason sailed on the ship Argo with a band of heroes to retrieve the Golden Fleece from distant Colchis.",
+    "category": "Heroes",
+    "difficulty": "hard",
+    "source": "Apollonius of Rhodes, Argonautica"
+  },
+  {
+    "id": "q07",
+    "question": "The Minotaur had the head of which animal?",
+    "answers": ["Lion", "Bull", "Goat", "Serpent"],
+    "correctIndex": 1,
+    "explanation": "The Minotaur had the head and tail of a bull on the body of a man, and was kept in the Labyrinth of Crete.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q08",
+    "question": "When Heracles cut off one of the Lernaean Hydra's heads, what usually happened?",
+    "answers": ["It died instantly", "Two heads grew back", "It turned to stone", "Nothing at all"],
+    "correctIndex": 1,
+    "explanation": "In most accounts the Hydra regrew two heads for each one severed. Heracles and his nephew Iolaus stopped it by burning each neck shut.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q09",
+    "question": "What kind of creature was Cerberus, the guardian of the Underworld?",
+    "answers": ["A giant serpent", "A multi-headed dog", "A winged horse", "A fire-breathing bull"],
+    "correctIndex": 1,
+    "explanation": "Cerberus was the many-headed hound (usually shown with three heads) that guarded the gates of Hades so the dead could not leave.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q10",
+    "question": "Who flew too close to the sun, melting his wax wings, and fell into the sea?",
+    "answers": ["Icarus", "Phaethon", "Hermes", "Bellerophon"],
+    "correctIndex": 0,
+    "explanation": "Icarus and his father Daedalus escaped Crete on wings of feathers and wax. Ignoring his father's warning, Icarus flew too high and the sun melted the wax.",
+    "category": "Myths & Stories",
+    "difficulty": "easy",
+    "source": "Ovid, Metamorphoses"
+  },
+  {
+    "id": "q11",
+    "question": "After Pandora opened the jar and released the world's evils, what alone remained inside?",
+    "answers": ["Love", "Hope", "Wisdom", "Fire"],
+    "correctIndex": 1,
+    "explanation": "The container was actually a large jar (pithos), not a box. After the evils escaped, only Hope (elpis) was left inside.",
+    "category": "Myths & Stories",
+    "difficulty": "medium",
+    "source": "Hesiod, Works and Days"
+  },
+  {
+    "id": "q12",
+    "question": "Which musician entered the Underworld to win back his wife, but lost her by looking back too soon?",
+    "answers": ["Orpheus", "Apollo", "Heracles", "Theseus"],
+    "correctIndex": 0,
+    "explanation": "Orpheus charmed Hades with his lyre to free his wife Eurydice, but lost her forever when he glanced back before they reached the surface.",
+    "category": "Myths & Stories",
+    "difficulty": "hard",
+    "source": "Virgil, Georgics; Ovid, Metamorphoses"
+  },
+  {
+    "id": "q13",
+    "question": "Who is the Greek god and ruler of the Underworld?",
+    "answers": ["Zeus", "Hades", "Apollo", "Ares"],
+    "correctIndex": 1,
+    "explanation": "Hades, brother of Zeus and Poseidon, received the Underworld as his domain when the three brothers divided the cosmos.",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q14",
+    "question": "Who is the queen of the Underworld and wife of Hades?",
+    "answers": ["Demeter", "Hera", "Persephone", "Aphrodite"],
+    "correctIndex": 2,
+    "explanation": "Persephone, daughter of Demeter, was carried off by Hades and became queen of the Underworld.",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Homeric Hymn to Demeter"
+  },
+  {
+    "id": "q15",
+    "question": "What food did Persephone eat that bound her to the Underworld?",
+    "answers": ["Pomegranate seeds", "A golden apple", "Honey", "Figs"],
+    "correctIndex": 0,
+    "explanation": "Eating the food of the dead bound her to Hades. She ate pomegranate seeds — ancient sources differ on how many (four in the Homeric Hymn, six in Ovid).",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Homeric Hymn to Demeter; Ovid, Metamorphoses"
+  },
+  {
+    "id": "q16",
+    "question": "Cerberus guarded the gates of the Underworld mainly to stop whom from leaving?",
+    "answers": ["The dead", "The gods", "Living heroes", "The Titans"],
+    "correctIndex": 0,
+    "explanation": "The many-headed hound let souls enter but prevented the dead from escaping back to the world of the living.",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q17",
+    "question": "Persephone's yearly months in the Underworld were said to explain the origin of what?",
+    "answers": ["The seasons", "The tides", "Eclipses", "Thunder"],
+    "correctIndex": 0,
+    "explanation": "While Persephone is below, her grieving mother Demeter lets the earth go barren — explaining autumn and winter; her return brings spring.",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Homeric Hymn to Demeter"
+  },
+  {
+    "id": "q18",
+    "question": "What did the ancient Greeks place with the dead to pay Charon the ferryman?",
+    "answers": ["A coin", "A sword", "A loaf of bread", "A laurel wreath"],
+    "correctIndex": 0,
+    "explanation": "A coin (an obol) was placed in or on the mouth of the dead as Charon's fare to ferry them across the river.",
+    "category": "The Underworld",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q19",
+    "question": "Who ferried the souls of the dead across the rivers of the Underworld?",
+    "answers": ["Hermes", "Charon", "Thanatos", "Cerberus"],
+    "correctIndex": 1,
+    "explanation": "Charon ferried souls who had received proper burial across the river. (Greek sources name the river Acheron; later Roman writers say the Styx.)",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q20",
+    "question": "Drinking from which river of the Underworld caused souls to forget their former lives?",
+    "answers": ["Styx", "Lethe", "Phlegethon", "Cocytus"],
+    "correctIndex": 1,
+    "explanation": "Lethe was the river of forgetfulness; its waters erased the memories of the dead. ('Lethe' gives us the word 'lethargy'.)",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q21",
+    "question": "In the Underworld, where did the souls of heroes and the virtuous go?",
+    "answers": ["Tartarus", "Elysium", "The Asphodel Meadows", "Mount Olympus"],
+    "correctIndex": 1,
+    "explanation": "Elysium (the Elysian Fields) was the blessed paradise reserved for heroes and the righteous; ordinary souls went to the Asphodel Meadows.",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q22",
+    "question": "Which king was condemned to roll a boulder uphill forever, only for it to roll back down each time?",
+    "answers": ["Tantalus", "Sisyphus", "Ixion", "Midas"],
+    "correctIndex": 1,
+    "explanation": "Sisyphus cheated death and was punished in the Underworld by endlessly rolling a boulder that always rolled back down.",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q23",
+    "question": "Whose punishment — standing in water that recedes and beneath fruit that pulls away — gave us the word 'tantalize'?",
+    "answers": ["Tantalus", "Sisyphus", "Atlas", "Prometheus"],
+    "correctIndex": 0,
+    "explanation": "Tantalus stood in a pool beneath fruit trees, but the water drained when he stooped to drink and the branches rose when he reached — eternally 'tantalized'.",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q24",
+    "question": "Hermes had a special role escorting the souls of the dead toward the Underworld. What was this role called?",
+    "answers": ["Psychopomp", "Oracle", "Ferryman", "Judge"],
+    "correctIndex": 0,
+    "explanation": "As 'Psychopomp' (guide of souls), Hermes led the newly dead down to the river, where Charon waited to ferry them across.",
+    "category": "The Underworld",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q25",
+    "question": "Three judges decided the fate of the dead in the Underworld. Which of these was one of them?",
+    "answers": ["Minos", "Theseus", "Cadmus", "Nestor"],
+    "correctIndex": 0,
+    "explanation": "Minos, along with Rhadamanthus and Aeacus, judged the souls of the dead and assigned them their place in the afterlife.",
+    "category": "The Underworld",
+    "difficulty": "hard",
+    "source": "Plato, Gorgias"
+  },
+  {
+    "id": "q26",
+    "question": "What was the name of the deep abyss below the Underworld where the worst sinners and the defeated Titans were imprisoned?",
+    "answers": ["Erebus", "Tartarus", "Elysium", "Acheron"],
+    "correctIndex": 1,
+    "explanation": "Tartarus was the deepest pit, far below Hades, used as a dungeon for the Titans and a place of torment for the greatest wrongdoers.",
+    "category": "The Underworld",
+    "difficulty": "hard",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q27",
+    "question": "Hades owned a famous helmet that granted its wearer what power?",
+    "answers": ["Invisibility", "Flight", "Super strength", "Control of fire"],
+    "correctIndex": 0,
+    "explanation": "The Helm of Hades (the Cap of Darkness), forged by the Cyclopes, made its wearer invisible. Perseus borrowed it to escape Medusa's sisters.",
+    "category": "The Underworld",
+    "difficulty": "hard",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q28",
+    "question": "Who was the leader of the Titans, who ruled the cosmos before the Olympian gods?",
+    "answers": ["Atlas", "Cronus", "Oceanus", "Hyperion"],
+    "correctIndex": 1,
+    "explanation": "Cronus, youngest of the Titans, overthrew his father Uranus and ruled during the so-called Golden Age, until his own son Zeus overthrew him.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q29",
+    "question": "The Titan Atlas was condemned to hold up what on his shoulders?",
+    "answers": ["The sky", "The earth", "The ocean", "Mount Olympus"],
+    "correctIndex": 0,
+    "explanation": "A common misconception is that Atlas held up the earth — his punishment was actually to hold up the sky (the heavens) at the western edge of the world.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q30",
+    "question": "Which Titan stole fire from the gods and gave it to humankind?",
+    "answers": ["Prometheus", "Atlas", "Cronus", "Hyperion"],
+    "correctIndex": 0,
+    "explanation": "Prometheus championed humanity by stealing fire for them, and was severely punished by Zeus for it.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q31",
+    "question": "Cronus was overthrown by his youngest son, who then became king of the gods. Who was that son?",
+    "answers": ["Poseidon", "Hades", "Zeus", "Apollo"],
+    "correctIndex": 2,
+    "explanation": "Zeus, raised in secret on Crete, freed his swallowed siblings and led them in overthrowing Cronus and the Titans.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q32",
+    "question": "Gaia, one of the first beings to come into existence, was the personification of what?",
+    "answers": ["The Earth", "The Sea", "Time", "Fire"],
+    "correctIndex": 0,
+    "explanation": "Gaia was the primordial Earth, mother of the sky (Uranus), the sea, the mountains, and the Titans.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q33",
+    "question": "Uranus, the husband and son of Gaia, was the primordial god of what?",
+    "answers": ["The Sky", "The Sea", "The Underworld", "The Harvest"],
+    "correctIndex": 0,
+    "explanation": "Uranus personified the sky (the heavens). With Gaia he fathered the twelve Titans.",
+    "category": "Titans & Creation",
+    "difficulty": "easy",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q34",
+    "question": "What is the name of the ten-year war in which Zeus and the Olympians defeated the Titans?",
+    "answers": ["The Titanomachy", "The Gigantomachy", "The Trojan War", "The Theogony"],
+    "correctIndex": 0,
+    "explanation": "The Titanomachy was the war against the Titans. (The Gigantomachy was a separate, later war against the Giants.)",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q35",
+    "question": "As punishment, an eagle ate Prometheus's ever-regrowing liver each day. What was his crime?",
+    "answers": ["Giving fire to humans", "Killing a god", "Betraying Cronus", "Creating monsters"],
+    "correctIndex": 0,
+    "explanation": "For stealing fire for humanity, Zeus chained Prometheus to a rock where an eagle ate his liver daily; it regrew each night until Heracles freed him.",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony; Aeschylus, Prometheus Bound"
+  },
+  {
+    "id": "q36",
+    "question": "To save the infant Zeus, Rhea tricked Cronus into swallowing what instead of the baby?",
+    "answers": ["A stone wrapped in cloth", "A goat", "A clay statue", "A golden apple"],
+    "correctIndex": 0,
+    "explanation": "Rhea handed Cronus a stone wrapped in swaddling clothes, which he swallowed believing it was Zeus.",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q37",
+    "question": "Why did Cronus swallow each of his own children at birth?",
+    "answers": ["A prophecy said a child would overthrow him", "To absorb their power", "Out of jealousy of Rhea", "To feed the other Titans"],
+    "correctIndex": 0,
+    "explanation": "Gaia and Uranus foretold that one of his children would overthrow him, just as he had overthrown his own father — so Cronus swallowed them.",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q38",
+    "question": "Who forged and gave Zeus his thunderbolts for the war against the Titans?",
+    "answers": ["The Cyclopes", "The Muses", "The Fates", "The Gorgons"],
+    "correctIndex": 0,
+    "explanation": "Zeus freed the Cyclopes from Tartarus, and in gratitude they forged his thunderbolts — the weapon that helped win the Titanomachy.",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q39",
+    "question": "Cronus overthrew his father Uranus using what weapon, provided by Gaia?",
+    "answers": ["A sickle", "A thunderbolt", "A trident", "A spear"],
+    "correctIndex": 0,
+    "explanation": "Gaia made a great adamantine sickle, and Cronus used it to overthrow Uranus.",
+    "category": "Titans & Creation",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q40",
+    "question": "Which Titaness was the goddess of memory and mother of the nine Muses?",
+    "answers": ["Mnemosyne", "Themis", "Phoebe", "Tethys"],
+    "correctIndex": 0,
+    "explanation": "Mnemosyne ('memory') lay with Zeus for nine nights and bore the nine Muses, goddesses of the arts.",
+    "category": "Titans & Creation",
+    "difficulty": "hard",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q41",
+    "question": "In Hesiod's account, how many Titans were the original children of Uranus and Gaia?",
+    "answers": ["Six", "Nine", "Twelve", "Three"],
+    "correctIndex": 2,
+    "explanation": "There were twelve Titans — six brothers (including Cronus and Oceanus) and six sisters (including Rhea and Mnemosyne).",
+    "category": "Titans & Creation",
+    "difficulty": "hard",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q42",
+    "question": "Besides the Titans and the one-eyed Cyclopes, Gaia and Uranus bore which hundred-handed giants?",
+    "answers": ["The Hecatoncheires", "The Gigantes", "The Gorgons", "The Erinyes"],
+    "correctIndex": 0,
+    "explanation": "The Hecatoncheires ('Hundred-Handed Ones') — Cottus, Briareus, and Gyges — each had fifty heads and a hundred arms, and helped Zeus defeat the Titans.",
+    "category": "Titans & Creation",
+    "difficulty": "hard",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q43",
+    "question": "Who was the Greek god of the sea, who carried a three-pronged trident?",
+    "answers": ["Poseidon", "Hades", "Ares", "Hermes"],
+    "correctIndex": 0,
+    "explanation": "Poseidon, brother of Zeus, ruled the sea and could stir up storms and earthquakes with his trident.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q44",
+    "question": "Who was the Greek goddess of love and beauty?",
+    "answers": ["Hera", "Artemis", "Aphrodite", "Demeter"],
+    "correctIndex": 2,
+    "explanation": "Aphrodite was the goddess of love, beauty, and desire.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q45",
+    "question": "Who was the queen of the gods and wife of Zeus?",
+    "answers": ["Hera", "Hestia", "Demeter", "Athena"],
+    "correctIndex": 0,
+    "explanation": "Hera was queen of Olympus and goddess of marriage, often portrayed as jealous of Zeus's many affairs.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q46",
+    "question": "Who was the messenger of the gods, famous for his winged sandals?",
+    "answers": ["Apollo", "Hermes", "Ares", "Hephaestus"],
+    "correctIndex": 1,
+    "explanation": "Hermes, the swift messenger god, was also the patron of travelers, merchants, and thieves.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q47",
+    "question": "Who was the Greek god of war?",
+    "answers": ["Apollo", "Hephaestus", "Ares", "Hermes"],
+    "correctIndex": 2,
+    "explanation": "Ares represented the brutal, chaotic side of war and was disliked by most of the other gods.",
+    "category": "Olympians",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q48",
+    "question": "Apollo and which goddess were twin children of Zeus and Leto?",
+    "answers": ["Athena", "Artemis", "Hera", "Persephone"],
+    "correctIndex": 1,
+    "explanation": "Apollo (god of light, music, and prophecy) and Artemis (goddess of the hunt and the moon) were twins born to Leto.",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q49",
+    "question": "In the most famous tradition, Aphrodite was born from what?",
+    "answers": ["Sea foam", "Zeus's head", "A pomegranate", "Clay"],
+    "correctIndex": 0,
+    "explanation": "Hesiod says Aphrodite rose from the sea foam where the severed parts of Uranus fell. (A different tradition makes her the daughter of Zeus and Dione.)",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q50",
+    "question": "Hephaestus, god of fire and the forge, is described in myth as having what trait?",
+    "answers": ["He was lame", "He was blind", "He was a giant", "He had wings"],
+    "correctIndex": 0,
+    "explanation": "Hephaestus was lame (often said to have been thrown from Olympus). The divine smith, he forged the gods' weapons and was married to Aphrodite.",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Homer, Iliad"
+  },
+  {
+    "id": "q51",
+    "question": "Apollo's most famous oracle, where a priestess delivered prophecies, was located at?",
+    "answers": ["Delphi", "Olympia", "Athens", "Sparta"],
+    "correctIndex": 0,
+    "explanation": "At Delphi, the priestess known as the Pythia spoke Apollo's prophecies — the most important oracle in the Greek world.",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Encyclopaedia Britannica"
+  },
+  {
+    "id": "q52",
+    "question": "Who was the god of wine, theater, and revelry, often counted among the Twelve Olympians?",
+    "answers": ["Dionysus", "Pan", "Helios", "Eros"],
+    "correctIndex": 0,
+    "explanation": "Dionysus, god of wine and the theater, was a latecomer to Olympus and is frequently listed among the Twelve.",
+    "category": "Olympians",
+    "difficulty": "medium",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q53",
+    "question": "Hera placed the hundred eyes of the slain giant Argus onto the tail of which bird?",
+    "answers": ["The peacock", "The owl", "The crow", "The eagle"],
+    "correctIndex": 0,
+    "explanation": "After Argus was killed, Hera set his hundred eyes into the tail of the peacock, her sacred bird.",
+    "category": "Olympians",
+    "difficulty": "hard",
+    "source": "Ovid, Metamorphoses"
+  },
+  {
+    "id": "q54",
+    "question": "Hermes carried a herald's staff entwined with two snakes and topped with wings. What is it called?",
+    "answers": ["The caduceus", "The aegis", "The thyrsus", "The trident"],
+    "correctIndex": 0,
+    "explanation": "The caduceus was Hermes's staff. (It is often confused with the Rod of Asclepius — a single snake, no wings — the true symbol of medicine.)",
+    "category": "Olympians",
+    "difficulty": "hard",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q55",
+    "question": "Which hero was famous for his superhuman strength and his Twelve Labors?",
+    "answers": ["Heracles", "Theseus", "Jason", "Bellerophon"],
+    "correctIndex": 0,
+    "explanation": "Heracles (Hercules to the Romans), a son of Zeus, performed the Twelve Labors as penance and became the greatest of the Greek heroes.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Apollodorus, Library"
+  },
+  {
+    "id": "q56",
+    "question": "Which Greek hero was known for his cleverness and the trick of the Trojan Horse?",
+    "answers": ["Achilles", "Odysseus", "Ajax", "Menelaus"],
+    "correctIndex": 1,
+    "explanation": "Odysseus devised the hollow wooden horse that let the Greeks sneak into Troy, then endured a ten-year journey home in the Odyssey.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Homer, Odyssey; Virgil, Aeneid"
+  },
+  {
+    "id": "q57",
+    "question": "Achilles was the greatest Greek warrior in which war?",
+    "answers": ["The Trojan War", "The Titanomachy", "The Persian War", "The Argonaut voyage"],
+    "correctIndex": 0,
+    "explanation": "Achilles was the central Greek champion of the Trojan War, told in Homer's Iliad.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Homer, Iliad"
+  },
+  {
+    "id": "q58",
+    "question": "Which winged horse did the hero Bellerophon tame and ride?",
+    "answers": ["Pegasus", "The Chimera", "Cerberus", "The Sphinx"],
+    "correctIndex": 0,
+    "explanation": "With the help of Athena's golden bridle, Bellerophon tamed the winged horse Pegasus.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q59",
+    "question": "How many Labors did Heracles famously have to complete?",
+    "answers": ["Seven", "Ten", "Twelve", "Twenty"],
+    "correctIndex": 2,
+    "explanation": "Heracles performed Twelve Labors for King Eurystheus, including slaying the Nemean Lion and the Hydra.",
+    "category": "Heroes",
+    "difficulty": "easy",
+    "source": "Apollodorus, Library"
+  },
+  {
+    "id": "q60",
+    "question": "According to later legend, Achilles could be wounded only in what part of his body?",
+    "answers": ["His heel", "His eye", "His hand", "His chest"],
+    "correctIndex": 0,
+    "explanation": "Thetis dipped baby Achilles in the River Styx, holding him by the heel — leaving that spot vulnerable. (This invulnerability story is post-Homeric; Homer's Iliad never mentions it.)",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Statius, Achilleid"
+  },
+  {
+    "id": "q61",
+    "question": "The first of Heracles' Labors was to slay which beast, whose hide no weapon could pierce?",
+    "answers": ["The Nemean Lion", "The Minotaur", "The Chimera", "The Sphinx"],
+    "correctIndex": 0,
+    "explanation": "Heracles strangled the Nemean Lion with his bare hands and afterward wore its impenetrable hide as armor.",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Apollodorus, Library"
+  },
+  {
+    "id": "q62",
+    "question": "Which fire-breathing monster did Bellerophon slay from the back of Pegasus?",
+    "answers": ["The Chimera", "Medusa", "The Hydra", "The Sphinx"],
+    "correctIndex": 0,
+    "explanation": "From the air on Pegasus, Bellerophon killed the Chimera — a beast that was part lion, part goat, and part serpent.",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Homer, Iliad; Hesiod, Theogony"
+  },
+  {
+    "id": "q63",
+    "question": "The winged horse Pegasus sprang forth when which monster was beheaded?",
+    "answers": ["Medusa", "The Hydra", "Echidna", "The Chimera"],
+    "correctIndex": 0,
+    "explanation": "When Perseus cut off Medusa's head, the winged horse Pegasus and the giant Chrysaor sprang from her body.",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q64",
+    "question": "During the Trojan War, Achilles killed which Trojan prince and greatest defender of Troy?",
+    "answers": ["Hector", "Paris", "Aeneas", "Priam"],
+    "correctIndex": 0,
+    "explanation": "Achilles slew Hector to avenge his friend Patroclus. (It was Hector's brother Paris who later killed Achilles.)",
+    "category": "Heroes",
+    "difficulty": "medium",
+    "source": "Homer, Iliad"
+  },
+  {
+    "id": "q65",
+    "question": "Theseus's father drowned himself on seeing black sails, wrongly thinking his son dead. What was named after him?",
+    "answers": ["The Aegean Sea", "The Ionian Sea", "Mount Olympus", "The city of Athens"],
+    "correctIndex": 0,
+    "explanation": "Theseus forgot to swap his ship's black sails for white. Seeing the black sails, King Aegeus despaired and threw himself into the sea — thereafter called the Aegean.",
+    "category": "Heroes",
+    "difficulty": "hard",
+    "source": "Plutarch, Life of Theseus"
+  },
+  {
+    "id": "q66",
+    "question": "Which hero founded the city of Thebes and sowed dragon's teeth that grew into armed warriors?",
+    "answers": ["Cadmus", "Perseus", "Bellerophon", "Pelops"],
+    "correctIndex": 0,
+    "explanation": "Cadmus slew a dragon and sowed its teeth, from which armed men (the Spartoi, or 'sown men') sprang up.",
+    "category": "Heroes",
+    "difficulty": "hard",
+    "source": "Apollodorus, Library; Ovid, Metamorphoses"
+  },
+  {
+    "id": "q67",
+    "question": "The Greek Sphinx had the body of a lion and the head of a what?",
+    "answers": ["A woman", "A bull", "An eagle", "A horse"],
+    "correctIndex": 0,
+    "explanation": "The Greek Sphinx had a woman's head, a lion's body, and an eagle's wings — and she terrorized the city of Thebes.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q68",
+    "question": "What was unusual about the appearance of the Cyclops Polyphemus?",
+    "answers": ["He had a single eye", "He had three heads", "He had snakes for hair", "He had bird wings"],
+    "correctIndex": 0,
+    "explanation": "Polyphemus, the Cyclops who trapped Odysseus, had one great eye in the middle of his forehead — which Odysseus blinded to escape.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q69",
+    "question": "The Sirens lured passing sailors to their deaths using what?",
+    "answers": ["Their beautiful song", "Bright lights", "A magic mist", "Giant waves"],
+    "correctIndex": 0,
+    "explanation": "The Sirens' irresistible singing drew sailors to wreck on the rocks of their island.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q70",
+    "question": "The Gorgon Medusa had what in place of hair?",
+    "answers": ["Living snakes", "Flames", "Feathers", "Vines"],
+    "correctIndex": 0,
+    "explanation": "Medusa's hair was a mass of living snakes, and a single look at her face turned a person to stone.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q71",
+    "question": "Centaurs were creatures that were half-human and half-what?",
+    "answers": ["Horse", "Bull", "Goat", "Lion"],
+    "correctIndex": 0,
+    "explanation": "A centaur had the upper body of a human joined to the body and legs of a horse.",
+    "category": "Monsters",
+    "difficulty": "easy",
+    "source": "Theoi.com"
+  },
+  {
+    "id": "q72",
+    "question": "Which monster posed a deadly riddle to travelers until the hero Oedipus solved it?",
+    "answers": ["The Sphinx", "The Hydra", "The Chimera", "Medusa"],
+    "correctIndex": 0,
+    "explanation": "When Oedipus answered the Sphinx's riddle, she threw herself to her death, freeing Thebes.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Apollodorus, Library"
+  },
+  {
+    "id": "q73",
+    "question": "Odysseus had to sail between the six-headed Scylla and which deadly whirlpool?",
+    "answers": ["Charybdis", "Echidna", "Ladon", "Cetus"],
+    "correctIndex": 0,
+    "explanation": "Charybdis was a monstrous whirlpool opposite Scylla; navigating 'between Scylla and Charybdis' meant choosing between two dangers.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q74",
+    "question": "Echidna, a creature that was half-woman and half-snake, was known as the 'mother of' what?",
+    "answers": ["Monsters", "The gods", "The winds", "The seas"],
+    "correctIndex": 0,
+    "explanation": "Echidna was called the 'Mother of Monsters'; with Typhon she bore Cerberus, the Hydra, the Chimera, and many others.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q75",
+    "question": "The fire-breathing Chimera was made of a lion, a serpent, and which third animal?",
+    "answers": ["A goat", "An eagle", "A bull", "A horse"],
+    "correctIndex": 0,
+    "explanation": "The Chimera was typically depicted as a lion in front, a goat rising from its back, and a serpent for a tail.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Homer, Iliad; Hesiod, Theogony"
+  },
+  {
+    "id": "q76",
+    "question": "How did Odysseus's crew avoid being lured by the Sirens' song?",
+    "answers": ["They plugged their ears with beeswax", "They sang louder", "They closed their eyes", "They dove underwater"],
+    "correctIndex": 0,
+    "explanation": "The crew sealed their ears with beeswax, while Odysseus — wanting to hear the song — had himself tied to the mast.",
+    "category": "Monsters",
+    "difficulty": "medium",
+    "source": "Homer, Odyssey"
+  },
+  {
+    "id": "q77",
+    "question": "Which hundred-headed monster — the deadliest in Greek myth — did Zeus defeat and bury beneath a mountain?",
+    "answers": ["Typhon", "The Hydra", "Argus", "Geryon"],
+    "correctIndex": 0,
+    "explanation": "Typhon, a storm-monster born of Gaia, fought Zeus for the cosmos. Zeus blasted him with thunderbolts and trapped him under Mount Etna.",
+    "category": "Monsters",
+    "difficulty": "hard",
+    "source": "Hesiod, Theogony"
+  },
+  {
+    "id": "q78",
+    "question": "What was the name of the wise centaur who tutored heroes such as Achilles and Jason?",
+    "answers": ["Chiron", "Nessus", "Pholus", "Eurytion"],
+    "correctIndex": 0,
+    "explanation": "Unlike the wild, unruly centaurs, Chiron was wise and gentle — a renowned teacher of medicine, music, and warfare to many heroes.",
+    "category": "Monsters",
+    "difficulty": "hard",
+    "source": "Theoi.com"
+  }
+]
