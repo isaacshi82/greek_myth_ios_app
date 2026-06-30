@@ -48,7 +48,9 @@
 > *[STYLE]* A giant, shadowy King Cronus cradling a single swaddled, glowing infant — stylized and mythic like a dark fairy tale, NOT gory or frightening; in the background, the Titaness Rhea (long flowing hair, sorrowful eyes, draped robe) weeps. Dark, somber, dramatic shadow.
 
 ### chapter1-10 — Rhea's plan
-> *[STYLE]* The Titaness Rhea secretly cradles a glowing baby Zeus while holding out a swaddled stone toward a looming King Cronus. Tender light on the baby, heavy shadow on Cronus. Tense and hopeful.
+> *[STYLE]* A tense, secret deception in a shadowed cavern. The Titaness Rhea (long flowing hair, draped robe — same design as chapter1-07) presents a **swaddled bundle that is secretly just a stone** to King Cronus, who reaches out to take it, grim and unsuspecting. Rhea's face is **fearful and deceptive, holding her breath**. The **real baby Zeus is HIDDEN — concealed in deep shadow behind her and tucked into her cloak, barely glimpsed, NOT glowing or obvious** (only the faintest hint he is there). Cronus is an imposing Titan but **at a similar scale to Rhea — NOT a giant looming head**. Dark, secretive, suspenseful; heavy shadow, low light.
+
+> *Key idea: it's a trick. The baby must read as HIDDEN/secret (shadowed, behind her); the stone-bundle is what she hands over. Cronus same size as Rhea, both Titans.*
 
 ### chapter1-11 — Zeus grows up in secret
 > *[STYLE]* A lush, hidden cave on a Greek island; a faintly glowing baby Zeus (tuft of dark hair, golden aura) tended by gentle nymphs and a goat. Warm, safe, magical, secret.
