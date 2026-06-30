@@ -38,7 +38,9 @@
 > *[STYLE]* Cronus as king — older, crowned, broad-shouldered, in a dark robe patterned with stars and cosmos motifs — seated on a massive ancient stone throne; the sky dims behind him and a faint, ominous ghostly face of Uranus forms in the clouds. Foreboding, regal.
 
 ### chapter1-08 — The prophecy
-> *[STYLE]* Extreme close-up of King Cronus's worried, paranoid face (crowned, grim) lit by eerie cold light; glowing prophetic symbols swirl around his head. Unsettling, psychological, high contrast.
+> *[STYLE]* Extreme close-up of King Cronus's fearful, paranoid face (crowned, grim) lit by eerie cold light; glowing **abstract** prophetic symbols swirl around his head — constellation lines and mystical runic shapes, **purely decorative, NOT letters or readable words**. Unsettling, psychological, high contrast.
+
+> *The symbols are meant to be unreadable mystical glyphs (AI can't render real text, and the prophecy is delivered by the narration). This panel is approved as generated.*
 
 ### chapter1-09 — Cronus swallows his children
 > *[STYLE]* A giant, shadowy King Cronus cradling a single swaddled, glowing infant — stylized and mythic like a dark fairy tale, NOT gory or frightening; in the background, the Titaness Rhea (long flowing hair, sorrowful eyes, draped robe) weeps. Dark, somber, dramatic shadow.
