@@ -197,35 +197,38 @@ struct ChapterView: View {
     }
 }
 
-/// The illustration for a panel, with a slow zoom/pan (Ken Burns). Shows a
+/// The illustration for a panel. Shows the *whole* picture (scaledToFit) so
+/// nothing important is cropped, floating over a softly blurred, slowly drifting
+/// copy of the same art so there are no black bars around it. Falls back to a
 /// branded placeholder until the named asset exists in the bundle.
 private struct PanelImageView: View {
     let imageName: String
-    @State private var animate = false
+    @State private var drift = false
 
     var body: some View {
-        // Color.clear sets the bounds; the image fills as a clipped overlay so its
-        // scaledToFill size never widens the layout past the screen.
-        Color.clear
-            .overlay {
-                imageOrPlaceholder
-                    // Always start zoomed past 1.0 so the pan never reveals an edge.
-                    .scaleEffect(animate ? 1.18 : 1.08)
-                    .offset(x: animate ? -12 : 12, y: animate ? -8 : 8)
-            }
-            .clipped()
-            .onAppear {
-                animate = false
-                withAnimation(.easeInOut(duration: 10)) { animate = true }
-            }
-    }
-
-    @ViewBuilder
-    private var imageOrPlaceholder: some View {
         if let uiImage = UIImage(named: imageName) {
-            Image(uiImage: uiImage)
-                .resizable()
-                .scaledToFill()
+            // Color.clear sets the bounds; both copies are clipped to it.
+            Color.clear
+                .overlay {
+                    // Blurred fill so the fitted image sits on a matching backdrop.
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .scaledToFill()
+                        .scaleEffect(drift ? 1.15 : 1.05)
+                        .blur(radius: 34)
+                        .overlay(Color.black.opacity(0.25))
+                }
+                .overlay {
+                    // The full illustration, uncropped.
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .scaledToFit()
+                }
+                .clipped()
+                .onAppear {
+                    drift = false
+                    withAnimation(.easeInOut(duration: 12)) { drift = true }
+                }
         } else {
             PlaceholderArt(label: imageName)
         }
