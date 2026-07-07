@@ -25,7 +25,7 @@ final class TriviaViewModel: ObservableObject {
         let source = pool ?? QuestionBank.filtered(category: category, difficulty: difficulty)
         self.pool = source
         self.roundSize = roundSize
-        self.questions = Array(source.shuffled().prefix(roundSize))
+        self.questions = Array(source.shuffled().prefix(roundSize)).map { $0.withShuffledAnswers() }
         // Defensive: an empty pool can't be played, so treat it as already finished.
         self.isFinished = self.questions.isEmpty
     }
@@ -58,7 +58,7 @@ final class TriviaViewModel: ObservableObject {
 
     /// Start over with a freshly drawn, shuffled round from the same pool.
     func restart() {
-        questions = Array(pool.shuffled().prefix(roundSize))
+        questions = Array(pool.shuffled().prefix(roundSize)).map { $0.withShuffledAnswers() }
         currentIndex = 0
         score = 0
         selectedIndex = nil

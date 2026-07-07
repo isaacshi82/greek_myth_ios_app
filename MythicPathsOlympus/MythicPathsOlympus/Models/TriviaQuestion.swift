@@ -17,4 +17,23 @@ struct TriviaQuestion: Identifiable, Codable {
 
     /// The text of the correct answer.
     var correctAnswer: String { answers[correctIndex] }
+
+    /// A copy with the answer options shuffled and `correctIndex` remapped to
+    /// wherever the correct answer landed. The content is authored with the
+    /// correct answer often in the first slot, so we randomize the order at
+    /// runtime — otherwise the answer is almost always option #1.
+    func withShuffledAnswers() -> TriviaQuestion {
+        let correct = answers[correctIndex]
+        let shuffled = answers.shuffled()
+        return TriviaQuestion(
+            id: id,
+            question: question,
+            answers: shuffled,
+            correctIndex: shuffled.firstIndex(of: correct) ?? correctIndex,
+            explanation: explanation,
+            category: category,
+            difficulty: difficulty,
+            source: source
+        )
+    }
 }
