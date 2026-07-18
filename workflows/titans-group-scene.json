@@ -1,0 +1,75 @@
+{
+  "_comment": "Scene SPEC for the chapter1-04 Titan group scene, built for a ComfyUI regional-conditioning + IPAdapter + ControlNet(OpenPose) workflow. This is NOT a raw ComfyUI graph export (node class names differ per template/version and a blind export is brittle). Instead it defines the canvas, the per-character regions, prompts, reference images, and poses so you can wire the area-conditioning nodes 1:1. See docs/comfyui-runpod-checklist.md for how to build the graph from this.",
+  "canvas": { "width": 1344, "height": 768, "aspect": "16:9" },
+  "base_model": "flux1-dev",
+  "shared_style_prompt": "bold graphic-novel illustration, painterly cel-shaded art like the video game Hades fused with Japanese manga linework, strong inky black outlines, dramatic rim lighting, deep shadows, warm saturated GOLDEN dawn palette, epic cinematic composition, no text, no watermark",
+  "global_background_prompt": "a vast primordial landscape at the golden dawn of the world: jagged newborn mountains on the left, a faint distant smoking volcano, a churning blue sea on the right, drifting low mist, an immense sky streaked with glowing constellations and warm golden sunrise light",
+  "global_background_strength": 0.4,
+  "notes": {
+    "figure_count": 8,
+    "layout": "3 male Titans on the left, CRONUS large in the center foreground, 4 Titanesses on the right — an imposing standing line",
+    "region_coords": "normalized 0..1, origin top-left, [x, y, width, height]",
+    "ipadapter": "attach each region's reference image via a per-region IPAdapter (identity lock); weight ~0.7-0.85",
+    "controlnet": "one OpenPose skeleton per region, standing pose, placed to match the region x — gives the deliberate line-up"
+  },
+  "regions": [
+    {
+      "name": "oceanus", "role": "male Titan (background left)",
+      "area": [0.00, 0.10, 0.14, 0.85],
+      "reference": "assets/raw/characters/titan-oceanus.jpg",
+      "prompt": "OCEANUS, a mature calm sea-Titan, long flowing hair and short beard, a circlet of shells, deep sea-green and golden robes, standing tall",
+      "pose": "standing upright, facing forward, arms at sides"
+    },
+    {
+      "name": "hyperion", "role": "male Titan (background left)",
+      "area": [0.14, 0.12, 0.12, 0.83],
+      "reference": "assets/raw/characters/titan-hyperion.jpg",
+      "prompt": "HYPERION, Titan of light, ashen-gold hair, a plain circlet, warm amber and golden robes, a faint glow, standing tall",
+      "pose": "standing upright, facing forward"
+    },
+    {
+      "name": "iapetus", "role": "male Titan (background left)",
+      "area": [0.26, 0.14, 0.12, 0.80],
+      "reference": "assets/raw/characters/titan-iapetus.jpg",
+      "prompt": "IAPETUS, a rugged Titan with dark grey-streaked hair and short beard, earthen-red and bronze garments, holding a plain spear, standing tall",
+      "pose": "standing upright, holding a spear vertically"
+    },
+    {
+      "name": "cronus", "role": "CENTER FOREGROUND hero",
+      "area": [0.40, 0.04, 0.20, 0.94],
+      "reference": "MythicPathsOlympus/MythicPathsOlympus/Assets.xcassets/titan-cronus-young.imageset/titan-cronus-young.jpg",
+      "prompt": "young CRONUS, handsome and heroic in the prime of youth, strong jaw, smooth youthful face, calm confident determined expression, long dark hair, bare-headed, weathered dark earth-toned armor, striding confidently toward the viewer, full body",
+      "pose": "striding forward toward camera, full body, powerful stance",
+      "ipadapter_weight": 0.9
+    },
+    {
+      "name": "rhea", "role": "Titaness (right)",
+      "area": [0.60, 0.14, 0.10, 0.80],
+      "reference": "assets/raw/characters/titan-rhea.jpg",
+      "prompt": "young RHEA, long flowing dark hair, warm gentle youthful features, a draped robe in dark red and ochre with a small lion motif, standing gracefully",
+      "pose": "standing upright, facing forward"
+    },
+    {
+      "name": "theia", "role": "Titaness (right)",
+      "area": [0.70, 0.13, 0.10, 0.82],
+      "reference": "assets/raw/characters/titan-theia.jpg",
+      "prompt": "THEIA, Titaness of light, long pale ashen-gold hair, calm luminous features, cream and pale-gold flowing robes, standing gracefully",
+      "pose": "standing upright, facing forward"
+    },
+    {
+      "name": "themis", "role": "Titaness (right)",
+      "area": [0.80, 0.13, 0.10, 0.82],
+      "reference": "assets/raw/characters/titan-themis.jpg",
+      "prompt": "THEMIS, Titaness of law and order, neatly bound dark hair, a calm just expression, slate-blue and bronze robes, holding balanced scales, standing gracefully",
+      "pose": "standing upright, holding scales"
+    },
+    {
+      "name": "phoebe", "role": "Titaness (right)",
+      "area": [0.90, 0.14, 0.10, 0.80],
+      "reference": "assets/raw/characters/titan-phoebe.jpg",
+      "prompt": "PHOEBE, Titaness of prophecy and the moon, pale silver-white hair, a crescent-moon circlet, silver and midnight-blue robes, holding a laurel branch, standing gracefully",
+      "pose": "standing upright, facing forward"
+    }
+  ],
+  "sampler": { "steps": 28, "cfg": 3.5, "sampler_name": "euler", "scheduler": "simple", "denoise": 1.0 }
+}
