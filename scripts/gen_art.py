@@ -18,8 +18,7 @@ character consistent — the whole point of our "reference sheet first" workflow
 """
 import argparse, base64, json, mimetypes, os, subprocess, sys, urllib.request
 
-MODEL = "gemini-2.5-flash-image"
-ENDPOINT = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+DEFAULT_MODEL = "gemini-2.5-flash-image"
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -30,6 +29,9 @@ def main():
     ap.add_argument("--ref", action="append", default=[], help="reference image(s) for consistency")
     ap.add_argument("--name", help="asset name; if set, imports via add-asset.sh")
     ap.add_argument("--type", default="characters", help="add-asset.sh type (characters|scenes)")
+    ap.add_argument("--aspect", help="aspect ratio, e.g. 16:9, 4:3, 1:1")
+    ap.add_argument("--model", default=DEFAULT_MODEL, help="image model (e.g. gemini-2.5-flash-image, gemini-3-pro-image)")
+    ap.add_argument("--size", help="image resolution for pro models: 1K, 2K, or 4K")
     args = ap.parse_args()
 
     key = os.environ.get("GEMINI_API_KEY")
@@ -42,9 +44,18 @@ def main():
         with open(ref, "rb") as f:
             parts.append({"inlineData": {"mimeType": mime, "data": base64.b64encode(f.read()).decode()}})
 
-    body = json.dumps({"contents": [{"parts": parts}]}).encode()
+    payload = {"contents": [{"parts": parts}]}
+    image_config = {}
+    if args.aspect:
+        image_config["aspectRatio"] = args.aspect
+    if args.size:
+        image_config["imageSize"] = args.size
+    if image_config:
+        payload["generationConfig"] = {"imageConfig": image_config}
+    body = json.dumps(payload).encode()
+    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{args.model}:generateContent"
     req = urllib.request.Request(
-        ENDPOINT, data=body,
+        endpoint, data=body,
         headers={"x-goog-api-key": key, "Content-Type": "application/json"},
         method="POST",
     )
