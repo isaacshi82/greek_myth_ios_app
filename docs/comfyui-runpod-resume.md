@@ -63,9 +63,30 @@ Upload the generated `titan-*` / `god-*` portraits
 `workflows/titans-group-scene.json`.
 
 ## Status / next steps
-- ✅ ComfyUI running on A40; Flux **schnell** installed; API generation proven
-  (first image: a young Zeus).
-- ⏭️ Add **Flux dev** + reference-conditioning (Redux/Kontext/IPAdapter) + ControlNet
-  to prove single-character consistency, then build the multi-character Titan scene.
+- ✅ ComfyUI running on A40; Flux **schnell** + **dev** installed
+  (`models/checkpoints/flux1-schnell-fp8.safetensors`, `flux1-dev-fp8.safetensors`).
+- ✅ API generation proven end-to-end (first image: a young Zeus) via `scripts/comfy_gen.py`.
+- ⏭️ **Next session — prove single-character consistency with Flux Kontext**
+  ("here's this character → put them in a new scene," text-steerable).
+
+### Turnkey: download Flux Kontext (all public, no token — verified)
+Run in a JupyterLab terminal (aria2 already installed; ~17 GB total, ~3 min @ 125 MB/s):
+```bash
+cd /workspace/ComfyUI
+B=https://huggingface.co/Comfy-Org/flux1-kontext-dev_ComfyUI/resolve/main/split_files
+aria2c -x16 -s16 -d models/diffusion_models -o flux1-dev-kontext_fp8_scaled.safetensors \
+  $B/diffusion_models/flux1-dev-kontext_fp8_scaled.safetensors
+aria2c -x16 -s16 -d models/text_encoders -o t5xxl_fp8_e4m3fn_scaled.safetensors \
+  $B/text_encoders/t5xxl_fp8_e4m3fn_scaled.safetensors
+aria2c -x16 -s16 -d models/text_encoders -o clip_l.safetensors \
+  $B/text_encoders/clip_l.safetensors
+aria2c -x16 -s16 -d models/vae -o ae.safetensors $B/vae/ae.safetensors
+```
+Kontext workflow uses: UNETLoader (the kontext diffusion model) + DualCLIPLoader
+(t5xxl + clip_l, type flux) + VAELoader (ae) + a reference image loaded via
+`LoadImage`/`/upload/image` → FluxKontextImageScale → ReferenceLatent → sampler.
+Then upload the `titan-*` refs via `POST /upload/image` and drive it with `comfy_gen.py`
+using `--graph` (a Kontext API graph). Test: put `titan-oceanus` in a new heroic pose,
+confirm identity holds.
 - 💸 **Stop the pod when idle.** Rotate the Gemini + HuggingFace tokens (both were
   pasted in chat during setup).
