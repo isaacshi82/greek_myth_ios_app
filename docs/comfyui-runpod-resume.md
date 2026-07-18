@@ -63,11 +63,34 @@ Upload the generated `titan-*` / `god-*` portraits
 `workflows/titans-group-scene.json`.
 
 ## Status / next steps
-- ✅ ComfyUI running on A40; Flux **schnell** + **dev** installed
-  (`models/checkpoints/flux1-schnell-fp8.safetensors`, `flux1-dev-fp8.safetensors`).
-- ✅ API generation proven end-to-end (first image: a young Zeus) via `scripts/comfy_gen.py`.
-- ⏭️ **Next session — prove single-character consistency with Flux Kontext**
-  ("here's this character → put them in a new scene," text-steerable).
+- ✅ ComfyUI running on A40; Flux **schnell** + **dev** + **Kontext** installed
+  (`models/checkpoints/flux1-{schnell,dev}-fp8.safetensors`,
+  `models/diffusion_models/flux1-dev-kontext_fp8_scaled.safetensors`).
+- ✅ API generation proven end-to-end via `scripts/comfy_gen.py` (basic Flux) and
+  `scripts/comfy_kontext.py` (character-consistent Kontext). First proofs: young Zeus,
+  and Oceanus (from his bust portrait) re-rendered full-body in a new scene — **identity
+  held** (face, beard, green hair, coral circlet all carried over).
+
+### Kontext = character consistency (working)
+`scripts/comfy_kontext.py --ref <portrait> --prompt "<new scene>" --out x.png`. It reuses
+the flux dev fp8 checkpoint for CLIP+VAE (no separate text-encoder/VAE downloads needed).
+**Tuning lessons:** state the palette explicitly ("muted, weathered, desaturated") or it
+drifts to saturated comic colors; constrain proportions ("~8 heads tall, normal head, NOT
+chibi") when using a bust reference. Palette never matches the reference *exactly* — that's
+style-LoRA territory if we ever need it.
+
+### Decision: multiple references per character (2026-07-18)
+Each character (Titans, gods, heroes-later) gets **multiple reference images**, not one:
+- **portrait/bust** (the current `titan-*` / `god-*` sheets) → app **library grid** + face anchor
+- **full-body** → **scene work** with correct proportions (fixes Kontext's head-heavy
+  extrapolation from busts). Kontext can also take *both* refs at once for stronger identity.
+Plan: regenerate full-body sheets in **Gemini**, feeding each existing bust as a face
+reference so identities stay consistent; then crop a portrait from the full-body for the
+library. Store dev-side refs as e.g. `assets/raw/characters/full-body/<name>.jpg` alongside
+the existing portrait `assets/raw/characters/<name>.jpg`.
+
+- ⏭️ **Next session:** generate full-body references, then build the multi-character Titan
+  scene (iterative Kontext per character, or the SDXL regional route).
 
 ### Turnkey: download Flux Kontext (all public, no token — verified)
 Run in a JupyterLab terminal (aria2 already installed; ~17 GB total, ~3 min @ 125 MB/s):
